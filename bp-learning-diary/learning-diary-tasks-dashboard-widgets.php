@@ -128,19 +128,19 @@ Class LearningDiaryTasksDashboardWidget Extends LearningDiaryTasks {
 		<ul>
 			<li>
 				<?php // VIDEO 1 ?>
-				<a href="<?php echo get_current_site(1)->url.get_current_site(1)->path."wp-content/plugins/".basename(dirname(__FILE__)); ?>/videos/tutorial1.html" class="popupwindow" rel="windowCenter">
+				<a href="<?php echo WP_PLUGIN_URL . '/' . LEARNING_DIARY_TASKS_PLUGIN_URL . '/bp-learning-diary/videos/tutorial1.html' ?>" class="popupwindow" rel="windowCenter">
 					<?php _e('Die ersten Schritte bei «lerntagebuch.ch» (Video)', 'bp_learning_diary')?>
 				</a>
 			</li>
 			<li>
 				<?php // VIDEO 1 ?>
-				<a href="<?php echo get_current_site(1)->url.get_current_site(1)->path."wp-content/plugins/".basename(dirname(__FILE__)); ?>/videos/tutorial2.html" class="popupwindow" rel="windowCenter">
+				<a href="<?php echo WP_PLUGIN_URL . '/' . LEARNING_DIARY_TASKS_PLUGIN_URL . '/bp-learning-diary/videos/tutorial2.html' ?>" class="popupwindow" rel="windowCenter">
 					<?php _e('Fragen erfassen und Antworten beobachten (Video)', 'bp_learning_diary')?>
 				</a>
 			</li>
 			<li>
 				<?php // VIDEO 1 ?>
-				<a href="<?php echo get_current_site(1)->url.get_current_site(1)->path."wp-content/plugins/".basename(dirname(__FILE__)); ?>/videos/tutorial3.html" class="popupwindow" rel="windowCenter">
+				<a href="<?php echo WP_PLUGIN_URL . '/' . LEARNING_DIARY_TASKS_PLUGIN_URL . '/bp-learning-diary/videos/tutorial2.html' ?>" class="popupwindow" rel="windowCenter">
 					<?php _e('Gruppe erstellen oder einer Gruppe beitreten (Video)', 'bp_learning_diary')?>
 				</a>
 			</li>

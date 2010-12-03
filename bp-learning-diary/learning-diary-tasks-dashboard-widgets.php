@@ -150,7 +150,8 @@ Class LearningDiaryTasksDashboardWidget Extends LearningDiaryTasks {
 			<li>
 				<?php printf(
 					__('Weitere Informationen findest du unter %1$s FAQ%2$s.', 'bp_learning_diary'),
-					'<a href="' . get_current_site(1)->url . get_current_site(1)->path . 'faq">',
+					//'<a href="' . get_current_site(1)->url . get_current_site(1)->path . 'faq">',
+					'<a href="http://wordpress.org/extend/plugins/learninglog/faq/">',
 					'</a>'
 				)?>
 			</li>

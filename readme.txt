@@ -5,41 +5,34 @@ Requires at least: PHP 5.2.x, WordPress 3.0, BuddyPress 1.2.4.1
 Tested up to: PHP 5.3.3, WordPress 3.0.1, BuddyPress 1.2.5.2
 Stable tag: 2.1
 
-Learninglog is a tool to ask questions.
+Learninglog offers teachers and learners advanced functions to use Wordpress as a learning tool.
 
 == Description ==
 
-#### What is Learninglog?
-
-BLABLA
-
-
-Students can:
-
-* --
-
-Teachers can:
-
-* --
+Learninglog is a free, open source plugin for Wordpress. It offers teachers and learners advanced functions to use Wordpress as a learning tool which includes
+* an administration interface for teachers to set up learninglogs for students
+* the possibility for teachers to create assignments for groups or individuals
+* easy ways to collect and review answers from individual learninglogs
+* advanced privacy settings for each learninglog entry, that can be labeled private, visible for a specific group or visible for  the www
+* a simplicity toggle, to switch advanced wordpress functions on or off, more user friendly, especially for young learners
+Learninglog is a project of the Institute for Media and Schools at University of Teacher Education Central Switzerland, PHZ Schwyz.
 
 == Installation ==
-
-**Notice: This plugin is under heavy development, and is not recommended for production environments!**
-
 Learninglog requires WordPress 3.0 or higher with BuddyPress 1.2.4.1 or higher installed.
 
-####Plugin:
-
-1. Upload everything into the "/wp-content/plugins" directory of your installation.
-2. Activate Learninglog Links in the "Plugins" admin panel using the "Activate" link.
+1. Upload learninglog to your /wp-content/plugins/ directory.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Frequently Asked Questions ==
 
 == Screenshots ==
+1. Admin learninglog (as Super Admin)
+2. Create new assignment (as teacher)
+3. Answer to an assignment (as student)
 
 == Changelog ==
-
-== Upgrade Notice ==
+= 2.1 = 
+* initial release.
 
 == Demo ==
 

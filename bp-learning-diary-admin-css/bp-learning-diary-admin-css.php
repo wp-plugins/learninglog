@@ -70,7 +70,7 @@ function learning_diary_admin_template_print_header(){
 					</li>
 				
 					<li<?php if (is_admin()) : ?> class="selected"<?php endif; ?>>
-						<a href="<?php echo $base_site_url ?>/wp-admin/" title="<?php _e( 'Administration', 'buddypress' ) ?>"><?php _e( 'Administration', 'buddypress' ) ?></a>
+						<a href="<?php echo get_active_blog_for_user(get_current_user_id())->siteurl ?>/wp-admin/" title="<?php _e( 'Administration', 'buddypress' ) ?>"><?php _e( 'Administration', 'buddypress' ) ?></a>
 					</li>
 				
 				<?php } ?>

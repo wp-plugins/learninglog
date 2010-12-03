@@ -1,0 +1,13 @@
+div#wpbody-content > div.wrap > form > table.form-table > tbody > tr.hide-if-no-js{
+	display:none;
+}
+
+tr#text-color-row{
+	display:none;
+}
+
+form > h3 {
+	display:none;
+}
+
+

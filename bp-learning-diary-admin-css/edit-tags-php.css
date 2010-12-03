@@ -1,0 +1,14 @@
+.form-field p {
+	font-size:11px;
+}
+
+.form-wrap p {
+	font-size:11px;
+}
+
+#col-left .col-wrap div {
+	background-color: #EDEDED;
+	padding-left:10px;
+	padding-top:5px;
+	border-radius: 5px 5px;
+}

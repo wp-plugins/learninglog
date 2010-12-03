@@ -1,0 +1,147 @@
+#learning_diary_tasks_table .th_id {
+	width: 10px;
+}
+
+#learning_diary_tasks_table .th_title {
+	width: 120px;
+}
+
+#learning_diary_tasks_table .th_users {
+	width: 80px;
+}
+
+#learning_diary_tasks_table .th_author {
+	width: 150px;
+}
+
+#learning_diary_tasks_table .th_answer {
+	width: 60px;
+}
+
+#learning_diary_tasks_table .th_publish_date,#learning_diary_tasks_table .th_post_modified
+	{
+	width: 90px;
+}
+
+#learning_diary_tasks_table .th_review_date {
+	width: 90px;
+}
+
+#learning_diary_answers_table .th_id {
+	width: 10px;
+}
+
+#learning_diary_answers_table .th_comments {
+	width: 40px;
+}
+
+#learning_diary_answers_table .th_title {
+	width: 160px;
+}
+
+#learning_diary_answers_table .th_author,#learning_diary_tasks_table .th_post_modified
+	{
+	width: 100px;
+}
+
+#the-task-list table {
+	margin-top: 20px;
+}
+
+#recent-tasks-table td {
+	padding: 5px 0 5px 0;
+	font-size: 11px;
+}
+
+.td-task-date {
+	width: 140px;
+}
+
+.td-task-answer {
+	height: 20px;
+	width: 90px;
+}
+
+.td-task-answer div {
+	padding-top: 3px;
+}
+
+#visiblefor #visibility_of_solution {
+	float: left;
+}
+
+#visiblefor .label {
+	padding-left: 25px;
+	font-size: 10px;
+}
+
+div.task-error {
+	width: 100%;
+	background: #f33;
+	margin-bottom: 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	color: #fff;
+}
+
+div.tablenav {
+	height: auto;
+	margin-top: 0;
+}
+
+div.tablenav .tablenav-pages {
+	height: auto;
+	line-height: 38px;
+	margin-top: 0;
+}
+
+div#show_tasks_of_group_div {
+	position: absolute;
+	right: 0;
+	margin-right: 13px;
+}
+
+div#show_tasks_of_group_div label {
+	font-size: 11px;
+}
+
+div#answer_format_div {
+	margin: 5px;
+}
+
+div#answer_format_preselect {
+	margin-top: 5px;
+}
+
+div#answer_format_preselect>div {
+	margin-top: 5px;
+	margin-left: 2px;
+}
+
+#answer_format_ques {
+	width: 390px;
+}
+
+#visibility {
+	display: none;
+}
+
+#namediv {
+	margin-top: -10px;
+}
+
+.highlighted {
+	background-color: #EEE;
+}
+
+/*resize white background on new task screen*/
+div#editnewtask>form>div#post-body {
+	height: 780px;
+}
+
+/*reposition image near "sichtbarkeit der aufgabe"-widget*/
+#ajax-loader-img {
+	margin-bottom: -4px;
+	margin-left: 5px;
+}

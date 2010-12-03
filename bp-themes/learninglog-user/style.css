@@ -1,0 +1,216 @@
+/*
+Theme Name: Learninglog User Template
+Theme URI: http://www.thomasmoser.ch
+Description: Learninglog User Template
+Version: 1.0
+Author: Thomas Moser
+Author URI: http://www.thomasmoser.ch
+Template: bp-default
+Tags: buddypress, two-column, grey, dark
+*/
+
+/* Inherit the default theme styles */
+@import url( ../../../buddypress/bp-themes/bp-default/_inc/css/default.css );
+
+/* > Global Elements (Override)
+-------------------------------------------------------------- */
+
+body {
+	min-width: 960px;
+	max-width: 960px;
+}
+
+a { color: #62a1e0; }
+a:hover, a:active { color: #888; }
+a:focus { outline: 1px dotted #ccc; }
+
+
+
+/* > Header (Override)
+-------------------------------------------------------------- */
+
+#header {
+	background: url( ../learninglog-home/images/default-header.png);
+}
+
+#logo a {
+	display: block;
+	height: 100%;
+}
+#header h1 {
+	bottom: 0px;
+	height: 100%;
+	left: 5px;
+	margin: 5px;
+	position: absolute;
+	width: 98%;
+}
+
+/* > Container (Override)
+-------------------------------------------------------------- */
+
+div#container {
+	position: relative;
+	width: 100%;
+	-moz-border-radius: none;
+	-webkit-border-radius: none;
+	-khtml-border-radius: none;
+	border: none;
+	background: none;
+	overflow: visible;
+	
+}
+
+/* > Item Body (Override)
+-------------------------------------------------------------- */
+
+span.activity, div#message p {
+	display: inline-block;
+	font-size: 11px;
+	font-weight: normal;
+	background: #eee;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	color: #a5a5a5;
+	padding: 1px 8px;
+	margin-top: 6px;
+	text-decoration: none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* > Sidebar (Override)
+-------------------------------------------------------------- */
+
+div#sidebar {
+	float: left;
+	width: 229px;
+	margin-left: -231px;
+	margin-top: 0px;
+	border-left: none;
+	border-right: 1px solid #e4e4e4;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	background: #fff;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-moz-box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	-webkit-box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	-khtml-box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	/* TODO: Find hack for IE */
+}
+
+div#sidebar h3.widgettitle {
+	margin: 25px -20px 10px -20px;
+	background: #eaeaea;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #eeeeee;
+}
+	
+
+/* > Sidebar Tasklist
+-------------------------------------------------------------- */
+
+#the-task-list table tr td {
+    margin:0 0 6px 0;
+    padding:4px 0 6px 0;
+    text-align:left;
+    font-size:11px;
+    border-bottom:1px solid #eaeaea;
+}
+div#the-task-list {
+	padding-left:11px;
+}
+#the-task-list table tr {
+    background:none;
+    vertical-align:top;
+}
+#the-task-list td.task-date {
+	text-align:right;
+	width:130px;
+	vertical-align:top;	
+}
+#the-task-list td.td-task-title {
+	vertical-align:top;
+}
+
+#the-task-list span {
+	line-height:14px;
+	color: #a5a5a5;
+}
+
+#the-task-list h6{
+	margin-top:0;
+    padding-bottom:0;
+    margin-bottom:0;
+    line-height:15px;
+}
+#show-all-tasks {
+	padding-top:25px;
+	text-align:center;
+}
+td.task-date {
+	
+}
+#widget_task_edit {
+	margin-top:10px;
+	
+}
+
+div#content div.padder  {
+	margin-right: 245px;
+	border-right: 1px solid #e4e4e4;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	background: #fff;
+	-moz-box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	-webkit-box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	-khtml-box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	overflow:hidden;
+}
+
+/* > Activity (Override) // Highlight (Override)
+-------------------------------------------------------------- */
+
+span.activity, span.highlight {
+	visibility:hidden;
+}
+
+/* > Item Tabs (Override)
+-------------------------------------------------------------- */
+
+div.item-list-tabs {
+	border-top: 1px solid #cccccc;
+}
+
+/* > Buttons  (Override)
+-------------------------------------------------------------- */
+
+/* > Buttons  (New)
+-------------------------------------------------------------- */
+a.buttonblue {
+	background: url( images/blue-grad.png ) top left repeat-x;
+	border-color:#666;
+	color:#fff;
+}
+
+div#admin-link {
+	margin-top:10px;
+}
+
+/* > Misc
+-------------------------------------------------------------- */
+
+.hidden {
+	display:none;
+}
+
+div#sidebar div.padder p#login-text {
+	display:none;
+}
+

@@ -1,0 +1,155 @@
+#learning_diary_tasks_dashboard_widget_create_task h4 {
+	font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+	float: left;
+	width: 9.5em;
+	clear: both;
+	font-weight: normal;
+	text-align: right;
+	padding-top: 5px;
+	font-size: 11px;
+}
+
+#learning_diary_tasks_dashboard_widget_create_task input,#learning_diary_tasks_dashboard_widget_create_task textarea,#learning_diary_tasks_dashboard_widget_create_task option
+	{
+	font-size: 11px;
+}
+
+#learning_diary_tasks_dashboard_widget_create_task h4 label {
+	margin-right: 10px;
+}
+
+#learning_diary_tasks_dashboard_widget_create_task .input-text-wrap,#learning_diary_tasks_dashboard_widget_create_task .textarea-wrap,#learning_diary_tasks_dashboard_widget_create_task .date-wrap,#learning_diary_tasks_dashboard_widget_create_task .timestamp-wrap
+{
+	margin: 0 0em 1em 8em;
+}
+
+#learning_diary_tasks_dashboard_widget_create_task .bp-learning-diary-wrap
+{
+	border-style: none;
+	background: #f9f9f9;
+	border-width: 0px;
+	padding: 0px;
+}
+
+#learning_diary_tasks_dashboard_widget_create_task #media-buttons 
+{
+	margin: 0 0 .5em 8em;
+	padding: 0 0 0 10px;
+	font-size: 11px;
+}
+
+#learning_diary_tasks_dashboard_widget_create_task #media-buttons a 
+{
+	vertical-align: bottom;
+}
+
+#dashboard-widgets #learning_diary_tasks_dashboard_widget_create_task form p.submit
+{
+	margin-left: 9em;
+}
+
+#dashboard-widgets #learning_diary_tasks_dashboard_widget_create_task form p.submit input
+{
+	float: left;
+}
+
+#dashboard-widgets #learning_diary_tasks_dashboard_widget_create_task form p.submit #save-post
+{
+	margin: 0 1em 0 10px;
+}
+
+#dashboard-widgets #learning_diary_tasks_dashboard_widget_create_task form p.submit #publish
+{
+	float: right;
+}
+
+.dashboard-submit-alpha 
+{
+	opacity: .5;
+	/* MS */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity = 50);
+}
+
+#the-task-list table 
+{	
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-bottom-left-radius: 0px 0px;
+	border-bottom-right-radius: 0px 0px;
+	border-top-left-radius: 0px 0px;
+	border-top-right-radius: 0px 0px;
+}
+
+#the-task-list th 
+{
+	background: none;
+}
+
+#recent-tasks-table td 
+{
+	border-bottom: 1px solid #EEE;
+}
+
+#recent-tasks-table td 
+{
+	padding: 5px 5px;
+	font-size: 11px;
+}
+
+.td-task-action 
+{
+	width: 120px;
+}
+
+.td-task-date 
+{
+	width: 140px;
+}
+
+div .learning_diary_task_dashboard_video 
+{
+/*	width: 125px;
+	height: 85px;
+	vertical-align: bottom;
+	border-bottom-left-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-top-left-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px; */
+}
+
+.learning_diary_task_dashboard_video a 
+{
+/*	display: block;
+	text-align: center;
+	padding-top: 55px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	color: #fff;*/
+}
+
+div#show_teacher_dashboard_functions .inside div.learning_diary_task_dashboard_shortcuts{
+	float:left;
+}
+
+div#show_teacher_dashboard_functions .inside div  {
+	padding:2px;
+	padding-right:40px;
+}
+
+li.learning_diary_task_dashboard_shortcuts_title {
+	border-bottom:1px solid #ddd;
+	padding-bottom:3px;
+	padding-right:10px;
+	font-weight:bold;
+}
+
+.inside p, .inside ul, .inside ol{
+	font-size:12px;
+}
+
+

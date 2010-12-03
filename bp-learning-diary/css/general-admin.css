@@ -1,0 +1,81 @@
+/*LEARNING DIARY TASKS ADMINISTRATION ADMIN ICON*/
+ul#adminmenu 
+	li.toplevel_page_learning_diary_tasks_init:hover 
+		.wp-menu-image a, 
+ul#adminmenu 
+	li.toplevel_page_learning_diary_tasks_init.wp-has-current-submenu 
+		.wp-menu-image a{
+			background-position: -1px 0px;		
+		}
+ul#adminmenu 
+	li.toplevel_page_learning_diary_tasks_init 
+		.wp-menu-image a {
+			background-image: url(images/admin-menu-icon-tasks-admin.png) !important;
+			background-position: -1px -32px;
+		}
+ul#adminmenu li.toplevel_page_learning_diary_tasks_init .wp-menu-image a img {
+	display: none;
+}
+
+/*LEARNING DIARY TASKS ADMIN ICON*/
+ul#adminmenu 
+	li.toplevel_page_learning_tasks:hover 
+		.wp-menu-image a, 
+ul#adminmenu 
+	li.toplevel_page_learning_tasks.current
+		.wp-menu-image a{
+			background-position: -1px 0px;		
+		}
+ul#adminmenu 
+	li.toplevel_page_learning_tasks
+		.wp-menu-image a {
+			background-image: url(images/admin-menu-icon-tasks.png) !important;
+			background-position: -1px -32px;
+		}
+ul#adminmenu li.toplevel_page_learning_tasks .wp-menu-image a img {
+	display: none;
+}
+
+/*GROUP ADMININISTRATION ADMIN ICON*/
+ul#adminmenu 
+	li.toplevel_page_redirect:hover 
+		.wp-menu-image a, 
+ul#adminmenu 
+	li.toplevel_page_redirect.wp-has-current-submenu 
+		.wp-menu-image a{
+			background-position: -1px 0px;		
+		}
+ul#adminmenu 
+	li.toplevel_page_redirect
+		.wp-menu-image a {
+			background-image: url(images/admin-menu-icon-group-admin.png) !important;
+			background-position: -1px -32px;
+		}
+ul#adminmenu li.toplevel_page_redirect .wp-menu-image a img {
+	display: none;
+}
+
+/*GROUP ADMININISTRATION ADMIN ICON*/
+ul#adminmenu 
+	li.toplevel_page_import-user:hover 
+		.wp-menu-image a, 
+ul#adminmenu 
+	li.toplevel_page_import-user.wp-has-current-submenu 
+		.wp-menu-image a{
+			background-position: -1px 0px;		
+		}
+ul#adminmenu 
+	li.toplevel_page_import-user
+		.wp-menu-image a {
+			background-image: url(images/admin-menu-icon-add-users.png) !important;
+			background-position: -1px -32px;
+		}
+ul#adminmenu li.toplevel_page_import-user .wp-menu-image a img {
+	display: none;
+}
+
+
+
+
+
+

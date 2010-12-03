@@ -1,0 +1,19 @@
+BP Access Controll Plugin:
+
+A) _bpac_visible_for
+	1) all
+	2) specific_groups
+	3) specific_users
+
+B) _bpac_users_of_group_have_access
+
+C) _bpac_user_has_access
+
+
+visible for	map to		DB
+------------	------		---
+all		none		A=>1
+all		group		A=>1, B=>group_ids
+specific group	group		A=>2, B=>group_ids, C=>user_ids
+specific user	user		A=>3, C=>user_ids
+

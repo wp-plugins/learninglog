@@ -1,0 +1,394 @@
+@CHARSET "UTF-8";
+
+/* > Admin (Override) -- Experimental!
+TODO: Move to Independent Plugin
+-------------------------------------------------------------- */
+
+/* > Global Elements
+-------------------------------------------------------------- */
+
+body {
+	background: #eaeaea url( ../../buddypress/bp-themes/bp-default/_inc/images/background.gif ) top left repeat-x;
+	font-size: 12px;
+	font-family: Arial, Tahoma, Verdana, sans-serif;
+	line-height: 170%;
+	color: #555;
+	margin: 0 auto;
+	padding-top: 0 !important; /* Remove the top padding space for the admin bar in this theme */
+}
+
+#wphead {
+	display:none;
+}
+
+#adminmenu {
+	float: left;
+	clear: left;
+	width: 210px;
+	margin-top: 15px;
+	margin-right: 5px;
+	margin-bottom: 15px;
+	margin-left: -249px;
+	position: relative;
+	padding: 10px;
+	list-style: none;
+}
+
+#adminmenu {
+	margin-top:144px;
+	left:996px;
+	border-left: none;
+	border-right: 1px solid #e4e4e4;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	background: #fff;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-moz-box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	-webkit-box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	-khtml-box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	box-shadow:rgba(200,200,200,1) 0 2px 10px;
+}
+
+div#wpbody {
+	width:996px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div.wrap {
+	margin: 18px;
+	margin-top:18px;
+	margin-right:200px;
+	padding: 15px;
+	border-left: none;
+	border-right: 1px solid #e4e4e4;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	background: #fff;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-moz-box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	-webkit-box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	-khtml-box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	box-shadow:rgba(200,200,200,1) 0 2px 10px;
+	width:684px;
+}
+
+#screen-options-link-wrap{
+	float:left;
+/*	margin-left:38px;*/
+	margin-left:18px;
+}
+
+*+html #screen-options-link-wrap{ /*IE7 only*/
+	display: none;
+}
+
+#contextual-help-link-wrap{
+	display:none;
+}
+
+/* > Header (ADMIN)
+-------------------------------------------------------------- */
+
+#admin_header {
+	position: relative;
+	color: #fff;
+	background-image: url( ../bp-themes/learninglog-home/images/default-header.png ) !important;
+	-moz-border-radius-bottomleft: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	margin-bottom: 20px;
+	height: 100px;
+	padding-top: 25px;
+	margin-left:18px;
+	width:960px;
+}
+
+h1#logo a {
+	display: block;
+	height: 100%;
+}
+div#admin_header h1 {
+	bottom: 0px;
+	height: 100%;
+	left: 5px;
+	margin: 5px;
+	position: absolute;
+	width: 98%;
+}
+
+ul#nav {
+	font-family: Arial, Tahoma, Verdana, sans-serif;
+}
+	
+
+#admin_header h1 {
+	position: absolute;
+	bottom: 22px;
+	left: 20px;
+	width: 44%;
+	margin: 0 0 -5px 0;
+}
+#admin_header h1 a {
+	color: #fff;
+	font-size: 26px;
+	text-decoration: none;
+}
+
+/* > Navigation
+-------------------------------------------------------------- */
+.wp-menu-separator {
+	visibility:hidden;
+}
+.wp-menu-separator-a {
+	visibility:hidden;
+}
+.wp-menu-separator-b {
+	visibility:hidden;
+}
+.wp-menu-separator-c {
+	visibility:hidden;
+}
+ul#nav {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 15px;
+	list-style: none;
+	bottom: 0;
+	max-width: 65%;
+}
+	ul#nav li {
+		float: left;
+		margin: 0 5px 0 0;
+	}
+		ul#nav li a {
+			display: block;
+			color: #fff;
+			text-decoration: none;
+			padding: 7px 15px;
+			
+			background: url( /madagascar/wp-content/plugins/buddypress/bp-themes/bp-default/_inc/images/60pc_black.png );
+			-moz-border-radius-topleft: 3px;
+			-webkit-border-top-left-radius: 3px;
+			-moz-border-radius-topright: 3px;
+			-webkit-border-top-right-radius: 3px;
+		}
+			ul#nav li.selected a, ul#nav li.current_page_item a {
+				background: #f5f5f5;
+				color: #555;
+			}
+			ul#nav a:focus { outline: none; }
+			
+	div#sidebar-me-top-border {
+		margin: 0 -10px 0 -10px;
+		border-top:1px solid #ccc;
+		background: #eaeaea;
+		margin-top:10px;
+		padding:8px 10px 8px 10px;
+		font-weight:600;
+	}
+	div#sidebar-me {
+		margin-top:10px;
+	}
+			
+	div#sidebar-me img.avatar {
+		float: left;
+		margin: 0 10px 15px 0;
+	}
+	
+	div#sidebar-me a { color: #aeaeae; }
+	div#sidebar-me a:hover, div#sidebar-me a:active { color: #888; }
+	
+	div#sidebar-me a.button {
+		margin-left:60px;
+		width:50px;
+		text-align:left;
+	}
+
+	div#sidebar-me h4 {
+		font-size: 16px;
+		margin: 0 0 8px 0;
+		font-weight: normal;
+	}
+	div#sidebar-me img {
+		border:1px solid #eaeaea;
+		padding:1px;
+	}
+	
+	#adminmenu .wp-submenu li.current, 
+	#adminmenu .wp-submenu li.current a, 
+	#adminmenu .wp-submenu li.current a:hover {
+		font-weight:normal;
+	}
+	
+	
+/* > Buttons (Override)
+-------------------------------------------------------------- */
+
+a.button, input[type=submit], input[type=button],
+ul.button-nav li a, div.generic-button a {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: normal;
+	cursor: pointer;
+}
+	a.button:hover, a.button:focus, input[type=submit]:hover, input[type=button]:hover,
+	ul.button-nav li a:hover, ul.button-nav li.current a,
+	div.generic-button a:hover {
+		outline: none;
+	}
+
+/* > Side Sortables
+-------------------------------------------------------------- */
+/* inner 2 column liquid layout */
+
+
+div#poststuff .inner-sidebar, div#poststuff #side-sortables {
+	width: 201px;
+	min-width:201px;
+}
+
+div#side-info-column .inner-sidebar #side-sortables {
+	width: 200px;
+	min-width:200px;
+}
+
+div#side-info-column .has-right-sidebar .inner-sidebar {
+	display: block;
+}
+
+div#side-info-column .has-right-sidebar #post-body {
+	float: left;
+	clear: left;
+	width: 100%;
+	margin-right: -280px;
+}
+
+.has-right-sidebar #post-body-content {
+	margin-right: 220px;
+}
+
+div#side-info-column .postbox {
+	width:200px;
+	min-width:200px;
+}
+div#side-info-column input.button, a.button {
+	padding-left:3px;
+	padding-right:3px;
+}
+
+#screen-meta {
+ 	z-index:10;
+}
+#admin_header {
+	z-index:9;
+}
+#screen-meta-links {
+	margin-right: 33px;
+}
+div#screen-options-link-wrap, div#contextual-help-link-wrap, .show-settings {
+	-moz-border-radius-bottomleft: 4px 4px;
+	-moz-border-radius-bottomright: 4px 4px;
+	-webkit-border-bottom-left-radius: 4px 4px;
+	-webkit-border-bottom-right-radius: 4px 4px;
+	-khtml-border-bottom-left-radius: 4px 4px;
+	-khtml-border-bottom-right-radius: 4px 4px;
+}
+
+/* > post.php tweaks
+-------------------------------------------------------------- */
+
+div#current_task{
+	margin-top:20px;	
+}
+div#current_task h3.hndle {
+	padding: 7px 9px;
+	margin:0;
+}
+
+div#current_task h3.hndle {
+	padding: 7px 9px;
+	margin:0;
+}
+div#current_task div.post{
+	padding:10px;
+}
+#namediv input.ed_button {
+	width:auto;
+}
+
+li#wp-menu-separator-title {
+	background: #eaeaea;
+	border-top: 1px solid #CCC;
+	margin-left: -10px;
+	margin-right: -10px;
+	cursor: auto;
+	padding:8px 10px 8px 10px;
+}
+li#wp-menu-separator-title div.wp-menu-image {
+	display:none;
+	
+}
+li#wp-menu-separator-title a, li#wp-menu-separator-title a:hover{
+	cursor: default;
+	margin:0;
+	padding:0;
+	color:#333;
+	font-weight:600;	
+}
+
+
+/* sichtbarkeit widget 
+---------------------------------------------------------------------*/
+
+div#bpsa-users-of-group-table{
+	margin-left:-15px;
+	margin-top:7px;
+	
+	
+}
+
+#bpsa-groups-of-user-mapto > table.widefat{
+	margin-top:0px;
+	border-style:none;
+}
+
+#learning-diary-tasks-all-users > table.widefat,
+#learning-diary-tasks-groups-of-user > table.widefat,
+#bpsa-groups-of-user > table.widefat, 
+#bpsa-all-users > table.widefat
+{
+	/*background-color: rgba(255, 255, 255, 0.9);*/
+/*	background-color: rgba(234, 242, 250, 0.9);
+	/*background-color: rgba(241, 241, 241, 0.9);*/
+	/*border-color: #AAA;
+	position:relative;
+	z-index:10;
+*/	margin-top:-10px;
+	border-style:none;
+
+}
+
+div#learning-diary-tasks-all-users,
+div#learning-diary-tasks-groups-of-user,
+div#bpsa-groups-of-user,
+div#bpsa-groups-of-user-mapto,
+div#bpsa-all-users{
+	margin-top:10px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	max-height:150px;
+	border-color: #dfdfdf;
+	border-style:solid;
+	border-width:1px;
+	border-radius:4px;
+}

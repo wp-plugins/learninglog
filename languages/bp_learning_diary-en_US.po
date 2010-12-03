@@ -1,0 +1,1617 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: lerntagebuch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2010-11-26 08:20+0100\n"
+"Last-Translator: Andrea Cantieni <andrea.cantieni@phz.ch>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:148
+#@ bp_learning_diary
+msgid "Rolle"
+msgstr "role"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:257
+#@ bp_learning_diary
+msgid ""
+"Angaben zum Nutzer: \n"
+"\n"
+"Weitere Angaben:\n"
+"\n"
+msgstr ""
+"User details:\n"
+"\n"
+"Further information:\n"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:600
+#@ bp_learning_diary
+msgid "Bitte gib mindestens eine Zeile in der folgenden Form ein:"
+msgstr "Please enter at least one row in the following way:"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:602
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:819
+#@ bp_learning_diary
+msgid "Benutzername;Vorname Nachname;email@domainname.ch"
+msgstr "Username; Firstname Lastname; email@domainname.com"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:614
+#@ bp_learning_diary
+msgid "Ungenügende Angaben"
+msgstr "Insufficient information"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:661
+#@ bp_learning_diary
+msgid "Doppelte Werte bei den Benutzernamen."
+msgstr "Redundant information in user name"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:670
+#@ bp_learning_diary
+msgid "Doppelte Werte bei den E-Mail-Adressen."
+msgstr "Redundant information in e-mail adresses"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:677
+#@ bp_learning_diary
+msgid "vergleiche Zeile"
+msgstr "see row"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:696
+#@ bp_learning_diary
+msgid "Vor- und Nachnamen angeben."
+msgstr "Enter first and last name"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:790
+#@ bp_learning_diary
+msgid "Lerntageb&uuml;cher erfolgreich erstellt"
+msgstr "learninglogs have been successfully created "
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:132
+#@ bp_learning_diary
+msgid "Die ersten Schritte bei «lerntagebuch.ch» (Video)"
+msgstr "First steps with \"learninglog.org\" (video)"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:138
+#@ bp_learning_diary
+msgid "Fragen erfassen und Antworten beobachten (Video)"
+msgstr "Composing and collecting assignments (video)"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:144
+#@ bp_learning_diary
+msgid "Gruppe erstellen oder einer Gruppe beitreten (Video)"
+msgstr "Creating and joining groups (video)"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:152
+#, php-format
+#@ bp_learning_diary
+msgid "Weitere Informationen findest du unter %1$s FAQ%2$s."
+msgstr "For additional information see %1$s FAQ%2$s."
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:330
+#, php-format
+#@ bp_learning_diary
+msgid ""
+"Hallo %1$s \n"
+"\n"
+"Du hast eine neue Aufgabe erhalten. \n"
+"\n"
+"Um die Aufgabe zu beantworten musst du dich anmelden unter \n"
+"\n"
+"%2$s \n"
+"\n"
+"Viel Erfolg! \n"
+"\n"
+"%3$s"
+msgstr ""
+"Hello %1$s \n"
+"\n"
+"You have received a new assignment.\n"
+"\n"
+"To work on it, log in here: \n"
+"\n"
+"%2$s \n"
+"\n"
+"Good luck! \n"
+"\n"
+"%3$s"
+
+#: bp-learning-diary/learning-diary-tasks-setup.php:13
+#@ bp_learning_diary
+msgid "Blendet einige selten benutzte Menus und Untermenus aus."
+msgstr "Hides seldom used menus and options."
+
+#: bp-learning-diary/learning-diary-tasks-setup.php:20
+#@ bp_learning_diary
+msgid "Passt den  Administrationsbereich am Design des Lerntagebuchs-Thema an."
+msgstr "Adjusts the administration area to the design of the learninglog theme."
+
+#: bp-learning-diary/learning-diary-tasks-setup.php:27
+#@ bp_learning_diary
+msgid "Erlaubt das Registrieren mehrerer Lernende gleichzeitig."
+msgstr "Allows for creating accounts for multiple learners at once."
+
+#: bp-learning-diary/learning-diary-tasks-setup.php:34
+#@ bp_learning_diary
+msgid "Ermöglicht Sichtbarkeitseinstellungen für Artikel und Seiten"
+msgstr "Visibility settings for articles and pages"
+
+#: bp-learning-diary/learning-diary-tasks-setup.php:95
+#@ bp_learning_diary
+msgid "Standardmässig sind alle Komponenten aktiviert. Hier kannst du einzelne Komponete für alle Blogs deaktivieren."
+msgstr "All components are active by default. Here you can disable components for all blogs."
+
+#: bp-social-access/social-access-control-edit-post.php:17
+#: bp-social-access/social-access-control-edit-post.php:24
+#@ bp_learning_diary
+msgid "Sichtbarkeit"
+msgstr "Visibility"
+
+#: bp-social-access/social-access-control-edit-post.php:84
+#@ bp_learning_diary
+msgid "Sichtbar f&uuml;r:"
+msgstr "Visible for"
+
+#: bp-social-access/social-access-control-edit-post.php:86
+#@ bp_learning_diary
+msgid "vollständig öffentlich"
+msgstr "Completely open to the public"
+
+#: bp-social-access/social-access-control-edit-post.php:91
+#@ bp_learning_diary
+msgid "alle angemeldeten Nutzende"
+msgstr "All registered users"
+
+#: bp-social-access/social-access-control-edit-post.php:95
+#@ bp_learning_diary
+msgid "spezifische Gruppen"
+msgstr "Specific groups"
+
+#: bp-social-access/social-access-control-edit-post.php:96
+#@ bp_learning_diary
+msgid "spezifische Nutzende"
+msgstr "Specific users"
+
+#: bp-social-access/social-access-control-edit-post.php:126
+#@ bp_learning_diary
+msgid "Nutzende anzeigen"
+msgstr "Show users"
+
+#: bp-social-access/social-access-control-edit-post.php:179
+#: bp-social-access/social-access-control-edit-post.php:224
+#@ bp_learning_diary
+msgid "Blog-Besitzer/in"
+msgstr "Blog owner"
+
+#: bp-social-access/social-access-control-options.php:22
+#@ bp_learning_diary
+msgid "Einstellungen › Sichtbarkeitsoptionen"
+msgstr "Settings › Visibility settings"
+
+#: bp-social-access/social-access-control-options.php:25
+#@ bp_learning_diary
+msgid "Gesch&uuml;tzte Eintr&auml;ge in RSS-Feeds"
+msgstr "Protected entries in RSS feeds"
+
+#: bp-social-access/social-access-control-options.php:29
+#@ bp_learning_diary
+msgid "Gesch&uuml;tzte Eintr&auml;ge sind in RSS-Feeds nicht sichtbar.<br>Damit ein Abonnent deines RSS-Feeds dennoch weiss, wann sich etwas auf deinem Weblog getan hat, kannst du den Titel von gesch&uuml;tzten Eintr&auml;gen anzeigen lassen."
+msgstr "Protected entries are not visible in RSS feeds.<br>To provide a notification for new postings you can allow the title of protected entries to be displayed."
+
+#: bp-social-access/social-access-control-options.php:34
+#@ bp_learning_diary
+msgid "Zeige den Titel von gesch&uuml;tzten Eintr&auml;gen im RSS-Feed."
+msgstr "Show the title of protected entries in the RSS feed."
+
+#: bp-social-access/social-access-control-options.php:101
+#@ bp_learning_diary
+msgid "Sichtbarkeitsoptionen"
+msgstr "Visibility options"
+
+#: bp-themes/learninglog-home/sidebar.php:58
+#@ bp_learning_diary
+msgid "Neu registrieren"
+msgstr "New user registration"
+
+#: simplicity/simplicity.php:18
+#@ bp_learning_diary
+msgid "Funktionsumfang"
+msgstr "Available functions"
+
+#: simplicity/simplicity.php:168
+#@ bp_learning_diary
+msgid "Einstellungen › Funktionsumfang"
+msgstr "Settings › Functional range"
+
+#: simplicity/simplicity.php:169
+#@ bp_learning_diary
+msgid "Funktionsumfang erweitern"
+msgstr "Expand available functions"
+
+#: simplicity/simplicity.php:170
+#@ bp_learning_diary
+msgid "Auf dieser Seite kannst du selten benötigte Funktionen ein- oder ausblenden."
+msgstr "In this menu you can enable or disable functions."
+
+#: simplicity/simplicity.php:174
+#@ bp_learning_diary
+msgid "Alle Funktionen anzeigen."
+msgstr "Show all functions."
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:45
+#: bp-learning-diary/learning-diary-tasks-edit.php:51
+#@ bp_learning_diary
+msgid "Kurzfrage hier eingeben"
+msgstr "Add question here"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:121
+#@ bp_learning_diary
+msgid "Mo"
+msgstr "Mon"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:122
+#@ bp_learning_diary
+msgid "Di"
+msgstr "Tue"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:123
+#@ bp_learning_diary
+msgid "Mi"
+msgstr "Wed"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:124
+#@ bp_learning_diary
+msgid "Do"
+msgstr "Thu"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:125
+#@ bp_learning_diary
+msgid "Fr"
+msgstr "Fri"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:126
+#@ bp_learning_diary
+msgid "Sa"
+msgstr "Sat"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:127
+#@ bp_learning_diary
+msgid "So"
+msgstr "Sun"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:185
+#@ bp_learning_diary
+msgid "ja"
+msgstr "yes"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:188
+#@ bp_learning_diary
+msgid "nein"
+msgstr "no"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:202
+#@ bp_learning_diary
+msgid "Reiner Text ..."
+msgstr "Simple Text ..."
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:203
+#@ bp_learning_diary
+msgid "... und 3 Smileys"
+msgstr "... and 3 smileys"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:204
+#@ bp_learning_diary
+msgid "... und 5 Smileys"
+msgstr "... and 5 smileys"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:205
+#@ bp_learning_diary
+msgid "... und Wochentage (Mehrfachauswahl)"
+msgstr "... and days of the week (multiple options)"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:206
+#@ bp_learning_diary
+msgid "... und Skala 1 bis 10"
+msgstr "... and rating scale from 1 to 10"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:207
+#@ bp_learning_diary
+msgid "... und Notenskala"
+msgstr "... and grades"
+
+#: bp-learning-diary/learning-diary-tasks-answer-format.php:208
+#@ bp_learning_diary
+msgid "... und ja/nein"
+msgstr "... and yes/no"
+
+#. translators: 1: day input, 2: month input, 3: year input, 4: separator, 5: hour input, 6: minute input
+#: bp-learning-diary/learning-diary-tasks-core.php:240
+#, php-format
+#@ bp_learning_diary
+msgid "%1$s. %2$s %3$s %4$s %5$s : %6$s"
+msgstr "%2$s %1$s, %3$s %4$s %5$s : %6$s"
+
+#: bp-learning-diary/learning-diary-tasks-core.php:385
+#@ bp_learning_diary
+msgid "Lernende aus folgenden Gruppen:"
+msgstr "learners from the following groups:"
+
+#: bp-learning-diary/learning-diary-tasks-core.php:534
+#@ bp_learning_diary
+msgid "Lernende:"
+msgstr "learners:"
+
+#: bp-learning-diary/learning-diary-tasks-core.php:586
+#@ bp_learning_diary
+msgid "Das bin ich."
+msgstr "That is me."
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:59
+#: bp-learning-diary/learning-diary-tasks-edit.php:838
+#: bp-learning-diary/learning-diary-tasks-edit.php:1485
+#: bp-learning-diary/learning-diary-tasks-edit.php:2304
+#: bp-learning-diary/learning-diary-tasks-sidebar-widget.php:68
+#@ bp_learning_diary
+msgid "Abzugeben bis"
+msgstr "Due by"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:60
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:92
+#: bp-learning-diary/learning-diary-tasks-edit.php:2307
+#: bp-learning-diary/learning-diary-tasks-edit.php:2379
+#: bp-learning-diary/learning-diary-tasks-sidebar-widget.php:107
+#@ bp_learning_diary
+msgid "Beantworten"
+msgstr "Answer"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:74
+#@ bp_learning_diary
+msgid "von"
+msgstr "from"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:77
+#: bp-learning-diary/learning-diary-tasks-edit.php:843
+#: bp-learning-diary/learning-diary-tasks-edit.php:1698
+#: bp-learning-diary/learning-diary-tasks-edit.php:2341
+#@ bp_learning_diary
+msgid "Offen"
+msgstr "open"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:85
+#@ bp_learning_diary
+msgid "Bearbeiten"
+msgstr "edit"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:116
+#@ bp_learning_diary
+msgid "Es sind keine neuen Aufgaben zu bearbeiten."
+msgstr "There are no new assignments to carry out."
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:174
+#: bp-learning-diary/learning-diary-tasks-init.php:159
+#: bp-learning-diary/learning-diary-tasks-init.php:167
+#@ bp_learning_diary
+msgid "Aufgaben"
+msgstr "Assignments"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:175
+#: bp-learning-diary/learning-diary-tasks-edit.php:1379
+#: bp-learning-diary/learning-diary-tasks-init.php:134
+#: bp-learning-diary/learning-diary-tasks-init.php:135
+#: bp-learning-diary/learning-diary-tasks-init.php:189
+#: bp-learning-diary/learning-diary-tasks-init.php:190
+#@ bp_learning_diary
+msgid "Aufgaben verwalten"
+msgstr "Organize assignments"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:176
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:271
+#: bp-learning-diary/learning-diary-tasks-edit.php:661
+#: bp-learning-diary/learning-diary-tasks-edit.php:676
+#: bp-learning-diary/learning-diary-tasks-edit.php:767
+#: bp-learning-diary/learning-diary-tasks-init.php:204
+#: bp-learning-diary/learning-diary-tasks-init.php:205
+#@ bp_learning_diary
+msgid "Neue Aufgabe erstellen"
+msgstr "Create a new assignment"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:182
+#@ bp_learning_diary
+msgid "Gruppen"
+msgstr "Groups"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:183
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:267
+#@ bp_learning_diary
+msgid "Neue Gruppe erstellen"
+msgstr "Create a new group"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:184
+#@ bp_learning_diary
+msgid "Lernende in Gruppen organisieren"
+msgstr "Organize learners in groups"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:56
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:875
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:189
+#@ bp_learning_diary
+msgid "Lernende registrieren"
+msgstr "Register new learners"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:58
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:493
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:190
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:269
+#@ bp_learning_diary
+msgid "Eine/n Lernende/n registrieren"
+msgstr "Register a single new learner"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:63
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:67
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:71
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:801
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:191
+#@ bp_learning_diary
+msgid "Mehrere Lernende registrieren"
+msgstr "Register a number of learners"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:220
+#@ bp_learning_diary
+msgid "Es gibt keine Anfragen."
+msgstr "There are no requests."
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:235
+#, php-format
+#@ bp_learning_diary
+msgid "Du hast %2$s eine neue Mitgliedschaftsanfrage%3$s zur Gruppe %4$s."
+msgid_plural "Du hast %2$s %1$s neue Mitgliedschaftsanfragen%3$s zur Gruppe %4$s."
+msgstr[0] "You got %2$s a new membership request%3$s for the group %4$s."
+msgstr[1] "You got %2$s %1$s new membership requests%3$s for the group %4$s."
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:265
+#@ bp_learning_diary
+msgid "Um Aufgaben stellen zu können, müssen die Lernenden in Gruppen organisiert sein. Dazu ist folgendes Vorgehen notwendig:"
+msgstr "To create assignments the learners have to be organized in groups. This can be done as follows:"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:268
+#@ bp_learning_diary
+msgid "einer Gruppe beitreten"
+msgstr "Join a group"
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:270
+#@ bp_learning_diary
+msgid "mehrere Lernende registrieren"
+msgstr "Register a number of learners"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:144
+#@ bp_learning_diary
+msgid "Lernende w&auml;hlen"
+msgstr "Choose learners"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:148
+#@ bp_learning_diary
+msgid "Abgabedatum muss nach dem Sichtbarkeitsdatum liegen"
+msgstr "The submission date has to be after the publication date"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:153
+#@ bp_learning_diary
+msgid "Sichtbarkeit w&auml;hlen"
+msgstr "Select visibility"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:157
+#@ bp_learning_diary
+msgid "Kurzfrage muss eingegeben werden"
+msgstr "Please enter short question"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:229
+#, php-format
+#@ bp_learning_diary
+msgid "Konnte nicht aus %1$s oder %2$s gel&ouml;scht werden"
+msgstr "Could not be deleted from %1$s or %2$s"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:312
+#@ bp_learning_diary
+msgid "Neue Aufgabe auf lerntagebuch.ch"
+msgstr "New assignment in learninglog.org"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:546
+#@ bp_learning_diary
+msgid "Blog ID oder Post ID fehlt"
+msgstr "Blog ID or post ID is missing"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:594
+#@ bp_learning_diary
+msgid ""
+"Um Aufgaben erstellen und bearbeiten zu k&ouml;nnen, musst du mindestens einer Gruppe angeh&ouml;ren.\n"
+"\t\t\tIn dieser Gruppe m&uuml;ssen zudem Lernende enthalten sein."
+msgstr "To create and edit a assignment you have to be member of at least one group."
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:599
+#, php-format
+#@ bp_learning_diary
+msgid "Eine %1$s neue Gruppe erstellen%2$s oder einer %3$s Gruppe beitreten%4$s"
+msgstr "Create a %1$s new group%2$s or join an %3$s existing group%4$s"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:608
+#, php-format
+#@ bp_learning_diary
+msgid "%1$s Eine/n Lernende/n registrieren%2$s oder %3$s mehrere Lernende registrieren%4$s"
+msgstr "%1$s Register a single learner %2$s or %3$s multiple learners%4$s"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:732
+#, php-format
+#@ bp_learning_diary
+msgid "Diese Aufgabe wurde bereits durch einen Lernenden beantwortet"
+msgid_plural "Diese Aufgabe wurde bereits durch %1$s Lernende beantwortet."
+msgstr[0] "This assignment has already been completed by a learner"
+msgstr[1] "This assignment has already been completed by %1$s learners"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:741
+#@ bp_learning_diary
+msgid "Bei &Auml;nderungen wird dies von jenen Lernenden nicht wahrgenommen, die die Aufgabe bereits beantwortet haben."
+msgstr "Changes will not affect learners who have already completed this assignment."
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:746
+#@ bp_learning_diary
+msgid "Das Antwortformat kann nicht mehr ge&auml;ndert werden, falls deine Frage bereits von Lernenden beantwortet wurde."
+msgstr "The answer format cannot be changed if the assignment has already been completed by learners."
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:761
+#@ bp_learning_diary
+msgid "Aufgabe bearbeiten"
+msgstr "Edit assignment"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:781
+#@ bp_learning_diary
+msgid "Die Aufgabe wurde als Entwurf gespeichert."
+msgstr "The assignment has been saved as a draft."
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:787
+#@ bp_learning_diary
+msgid "Die Aufgabe wurde publiziert."
+msgstr "The assignment has been published"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:809
+#: bp-learning-diary/learning-diary-tasks-edit.php:1484
+#@ bp_learning_diary
+msgid "Sichtbar ab"
+msgstr "Visible from"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:814
+#: bp-learning-diary/learning-diary-tasks-edit.php:1678
+#@ bp_learning_diary
+msgid "Sofort"
+msgstr "Immediately"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:831
+#@ bp_learning_diary
+msgid "&auml;ndern zu sofort"
+msgstr "Set to immediately"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:858
+#@ bp_learning_diary
+msgid "&auml;ndern zu Offen"
+msgstr "Set to open"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:866
+#@ bp_learning_diary
+msgid "Sichtbarkeit der Antworten"
+msgstr "Visiblity of answers"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:868
+#@ bp_learning_diary
+msgid "Kann von den antwortenden Lernenden ge&auml;ndert werden."
+msgstr "Can be changed by answering learners"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:879
+#@ bp_learning_diary
+msgid "Antworten auf diese Aufgabe sind nur f&uuml;r mich und <strong>den antwortenden Lernenden</strong> sichtbar."
+msgstr "Completed assignments are visible to me and <strong>the learner only</strong>."
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:892
+#@ bp_learning_diary
+msgid "Antworten auf diese Aufgabe sind f&uuml;r mich und <strong>alle antwortenden Lernenden</strong> sichtbar."
+msgstr "Completed assignments are visible to me and <strong>all answering learners</strong>. "
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:909
+#@ bp_learning_diary
+msgid "Antworten auf diese Aufgabe sind f&uuml;r <strong>alle angemeldeten Nutzer</strong> sichtbar."
+msgstr "Completed assignments are visible to <strong>all registered users</strong>."
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:924
+#@ bp_learning_diary
+msgid "Antworten sind <strong>vollst&auml;ndig &ouml;ffentlich</strong>."
+msgstr "Completed assignments are <strong>entirely open to the public</strong>."
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:933
+#@ bp_learning_diary
+msgid "Sichtbarkeit der Aufgabe"
+msgstr "Assignment visibility"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:973
+#@ bp_learning_diary
+msgid "Titel der Aufgabe"
+msgstr "Assignment title"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:983
+#@ bp_learning_diary
+msgid "Beschreibung der Aufgabe"
+msgstr "Assignment description"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:999
+#@ bp_learning_diary
+msgid "Antwortformat"
+msgstr "Answer format"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1304
+#@ bp_learning_diary
+msgid "Ungelöst"
+msgstr "uncompleted"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1305
+#@ bp_learning_diary
+msgid "Gelöst"
+msgstr "completed"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1354
+#: bp-learning-diary/learning-diary-tasks-edit.php:2191
+#@ bp_learning_diary
+msgid "Nur Aufgaben zeigen f&uuml;r Gruppe:"
+msgstr "Show assignments for group:"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1357
+#: bp-learning-diary/learning-diary-tasks-edit.php:2193
+#@ bp_learning_diary
+msgid "Alle zeigen"
+msgstr "Show all"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1382
+#@ bp_learning_diary
+msgid "Hinzufügen"
+msgstr "Create"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1391
+#@ bp_learning_diary
+msgid "F&uuml;r diese Gruppe existieren keine Aufgaben. Erstelle mit &laquo;Hinzuf&uuml;gen&raquo; eine Aufgabe."
+msgstr "There are no assignments for this group. Create an assignment with &laquo;Create&raquo;"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1395
+#@ bp_learning_diary
+msgid "Du hast noch keine Aufgaben erstellt. Erstelle mit &laquo;Hinzuf&uuml;gen&raquo; deine erste Aufgabe."
+msgstr "There are no assignments yet. Create an assignment with &laquo;Create&raquo; "
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1483
+#@ bp_learning_diary
+msgid "Antworten"
+msgstr "Answers"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1529
+#: bp-learning-diary/learning-diary-tasks-edit.php:2315
+#@ bp_learning_diary
+msgid "Keine Aufgaben in dieser Kategorie."
+msgstr "No assignments in this category"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1598
+#@ bp_learning_diary
+msgid "Gel&ouml;st"
+msgstr "Completed"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1644
+#@ bp_learning_diary
+msgid "Antworten zeigen"
+msgstr "Show completed"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1808
+#, php-format
+#@ bp_learning_diary
+msgid "Antworten zur Aufgabe &laquo;%s&raquo;"
+msgstr "Completed assignments &laquo;%s&raquo;"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:2012
+#@ bp_learning_diary
+msgid "Beitrag ansehen und kommentieren"
+msgstr "Read and comment"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:2023
+#@ bp_learning_diary
+msgid "Nutzer hat Aufgabe in den Papierkorb verschoben."
+msgstr "User has moved the assignment to the garbage bin"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:2025
+#@ bp_learning_diary
+msgid "Nutzer hat seine Antwort endg&uuml;ltig gel&ouml;scht."
+msgstr "User has deleted the assignment."
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:2027
+#@ bp_learning_diary
+msgid "Noch nicht geantwortet."
+msgstr "Not yet completed."
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:2216
+#@ bp_learning_diary
+msgid "Meine Aufgaben"
+msgstr "My assignments"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:2238
+#@ bp_learning_diary
+msgid "Offene Aufgaben und Entw&uuml;rfe"
+msgstr "Uncompleted assignnents and drafts"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:2250
+#@ bp_learning_diary
+msgid "Gel&ouml;ste Aufgaben"
+msgstr "Completed assignments"
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:2412
+#@ bp_learning_diary
+msgid "Du hast noch keine zu l&ouml;senden Aufgaben erhalten."
+msgstr "You have no assignments yet."
+
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:138
+#@ bp_learning_diary
+msgid "Kein Filter"
+msgstr "No filter"
+
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:140
+#@ bp_learning_diary
+msgid "Meine Beitr&auml;ge"
+msgstr "My articles"
+
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:153
+#@ bp_learning_diary
+msgid "Du hast noch keine Beitr&auml;ge f&uuml;r diese Gruppe geschrieben."
+msgstr "You have not written any articles in this group yet."
+
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:155
+#@ bp_learning_diary
+msgid "Diese Gruppe hat noch keine (f&uuml;r dich sichtbare) Beitr&auml;ge."
+msgstr "This group does not contain any articles."
+
+#: bp-learning-diary/learning-diary-tasks-init.php:30
+#@ bp_learning_diary
+msgid "Erste Schritte f&uuml;r Lehrende"
+msgstr "First steps for teachers"
+
+#: bp-learning-diary/learning-diary-tasks-init.php:41
+#@ bp_learning_diary
+msgid "Schnellzugriff auf Funktionen f&uuml;r Lehrende"
+msgstr "Quick links for teachers"
+
+#: bp-learning-diary/learning-diary-tasks-init.php:50
+#@ bp_learning_diary
+msgid "Mitgliedschaftsanfragen zu meinen Gruppen"
+msgstr "Membership requests for my groups"
+
+#: bp-learning-diary/learning-diary-tasks-init.php:59
+#@ bp_learning_diary
+msgid "Tutorials und FAQ"
+msgstr "Tutorials and FAQ"
+
+#: bp-learning-diary/learning-diary-tasks-init.php:68
+#@ bp_learning_diary
+msgid "Neue Aufgaben"
+msgstr "New assignments"
+
+#: bp-learning-diary/learning-diary-tasks-init.php:121
+#: bp-learning-diary-admin-css/bp-learning-diary-admin-css.php:69
+#: bp-themes/learninglog-home/header.php:57
+#: bp-themes/learninglog-home/header.php:59
+#: bp-themes/learninglog-user/header.php:56
+#: bp-themes/learninglog-user/header.php:58
+#@ bp_learning_diary
+msgid "Mein Lerntagebuch"
+msgstr "My learninglog"
+
+#: bp-learning-diary/learning-diary-tasks-init.php:122
+#@ bp_learning_diary
+msgid "Funktionen für Lehrende"
+msgstr "Teachers menu"
+
+#: bp-learning-diary/learning-diary-tasks-init.php:145
+#: bp-learning-diary/learning-diary-tasks-init.php:146
+#@ bp_learning_diary
+msgid "Lerntagebuchadmin"
+msgstr "Admin learninglog "
+
+#: bp-learning-diary/learning-diary-tasks-init.php:235
+#: bp-learning-diary/learning-diary-tasks-init.php:236
+#@ bp_learning_diary
+msgid "Gruppen verwalten"
+msgstr "Manage groups"
+
+#: bp-learning-diary/learning-diary-tasks-init.php:292
+#: bp-learning-diary/learning-diary-tasks-init.php:293
+#: bp-learning-diary/learning-diary-tasks-register-blog.php:224
+#@ bp_learning_diary
+msgid "Lerntagebuchoptionen"
+msgstr "Options learninglog"
+
+#: bp-learning-diary/learning-diary-tasks-options.php:72
+#@ bp_learning_diary
+msgid "Du must mindestens eine Rolle (Lernende/r oder Lehrende/r) ausw&auml;hlen."
+msgstr "You have to choose a role (teacher or learner)."
+
+#: bp-learning-diary/learning-diary-tasks-options.php:80
+#@ bp_learning_diary
+msgid "Deine Angaben wurden gespeichert."
+msgstr "Your information has been saved."
+
+#: bp-learning-diary/learning-diary-tasks-options.php:89
+#@ bp_learning_diary
+msgid "Einstellungen › Lerntagebuchoptionen"
+msgstr "Settings › options learninglog"
+
+#: bp-learning-diary/learning-diary-tasks-options.php:93
+#@ bp_learning_diary
+msgid "Rollen / Einstellung zu den Aufgaben"
+msgstr "Roles / setting for the assignments"
+
+#: bp-learning-diary/learning-diary-tasks-options.php:96
+#@ bp_learning_diary
+msgid "Ich bin <b>Lernende/r</b>. (Ich m&ouml;chte Aufgaben erhalten.)"
+msgstr "I am a <b>learner</b>. (I want to receive assignments.)"
+
+#: bp-learning-diary/learning-diary-tasks-options.php:99
+#@ bp_learning_diary
+msgid "Ich bin <b>Lehrende/r</b>. (Ich m&ouml;chte Aufgaben stellen. Um Aufgaben stellen zu k&ouml;nnen, musst du von mindestens einer Gruppe Moderator oder Administrator sein.)"
+msgstr "I am a <b>teacher</b>. (I want to create assignments. To create assignments you have to be moderator or administrator of at least one group.)"
+
+#: bp-learning-diary/learning-diary-tasks-options.php:103
+#@ bp_learning_diary
+msgid "Benachrichtigungen"
+msgstr "Notifications"
+
+#: bp-learning-diary/learning-diary-tasks-options.php:106
+#@ bp_learning_diary
+msgid "Ich m&ouml;chte beim Erhalt neuer Aufgaben per E-Mail benachrichtigt werden."
+msgstr "I want to receive an email notification when new assignments are available."
+
+#: bp-learning-diary/learning-diary-tasks-post-edit.php:26
+#, php-format
+#@ bp_learning_diary
+msgid "Aufgabe (von %1$s): %2$s"
+msgstr "Assignment (of %1$s): %2$s"
+
+#: bp-learning-diary/learning-diary-tasks-post-edit.php:51
+#: bp-learning-diary/learning-diary-tasks-post-edit.php:165
+#@ bp_learning_diary
+msgid "Kurzfrage:"
+msgstr "Short question:"
+
+#: bp-learning-diary/learning-diary-tasks-register-blog.php:229
+#@ bp_learning_diary
+msgid "(Kann sp&auml;ter ge&auml;ndert werden.)"
+msgstr "(Can be modified later)"
+
+#: bp-learning-diary/learning-diary-tasks-register-blog.php:232
+#@ bp_learning_diary
+msgid "Ich bin Lernende/r."
+msgstr "I am a learner."
+
+#: bp-learning-diary/learning-diary-tasks-register-blog.php:235
+#@ bp_learning_diary
+msgid "Ich bin Lehrende/r."
+msgstr "I am a teacher."
+
+#: bp-learning-diary/learning-diary-tasks-register-blog.php:243
+#@ bp_learning_diary
+msgid "Nutzungsbestimmungen"
+msgstr "Terms of use"
+
+#: bp-learning-diary/learning-diary-tasks-register-blog.php:247
+#, php-format
+#@ bp_learning_diary
+msgid "Ich bin mit den %1$s Nutzungsbestimmungen%2$s einverstanden."
+msgstr "I agree with the %1$s terms of use%2$s."
+
+#: bp-learning-diary/learning-diary-tasks-show-task-in-theme.php:37
+#, php-format
+#@ bp_learning_diary
+msgid "Aufgabe <small>(von %s)</small>"
+msgstr "Assignment <small>(of %s)</small>"
+
+#: bp-learning-diary/learning-diary-tasks-sidebar-widget.php:14
+#@ bp_learning_diary
+msgid "Zeigt die neusten Aufgaben f&uuml;r Lernende."
+msgstr "Shows newest assignments for learners."
+
+#: bp-learning-diary/learning-diary-tasks-sidebar-widget.php:21
+#: bp-learning-diary/learning-diary-tasks-sidebar-widget.php:41
+#@ bp_learning_diary
+msgid "Lerntagebuchaufgaben"
+msgstr "Assignments for my learninglog"
+
+#: bp-learning-diary/learning-diary-tasks-sidebar-widget.php:83
+#, php-format
+#@ bp_learning_diary
+msgid "(von %s)"
+msgstr "(of %s)"
+
+#: bp-learning-diary/learning-diary-tasks-sidebar-widget.php:96
+#@ bp_learning_diary
+msgid "offen"
+msgstr "open"
+
+#: bp-learning-diary/learning-diary-tasks-sidebar-widget.php:120
+#@ bp_learning_diary
+msgid "Keine neuen Aufgaben!"
+msgstr "No new assignments"
+
+#: bp-learning-diary/learning-diary-tasks-sidebar-widget.php:170
+#@ bp_learning_diary
+msgid "Meine Lerntagebuchaufgaben"
+msgstr "Assignments for my learninglog"
+
+#: bp-learning-diary-admin-css/bp-learning-diary-admin-css.php:140
+#@ bp_learning_diary
+msgid "Du musst dein Benutzerkonto jetzt noch aktivieren"
+msgstr "You have to activate your account."
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:52
+#@ bp_learning_diary
+msgid "Importadministration"
+msgstr "Import administration"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:94
+#@ bp_learning_diary
+msgid ""
+"Lieber Nutzer von «lerntagebuch.ch»\n"
+"\n"
+"Deine Anfrage zum Massenimport wurde bearbeitet.\n"
+"\n"
+"Du kannst nun Nutzer auf «lerntagebuch.ch» importieren.\n"
+"\n"
+"Herzliche Grüsse\n"
+"Dein «lerntagebuch.ch»-Team"
+msgstr ""
+"Dear learninglog user\n"
+"Your request for user import privileges for learninglog has been approved. Now you can import multiple users.\n"
+"Kind regards\n"
+"the learninglog team"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:100
+#@ bp_learning_diary
+msgid "Zugang zum Massenimport genehmigt"
+msgstr "Access to multiple user import granted"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:136
+#@ bp_learning_diary
+msgid "Mehrfachregistration validieren"
+msgstr "Validate multiple user import"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:145
+#@ bp_learning_diary
+msgid "Name der Institution"
+msgstr "Name of institution"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:149
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:341
+#@ bp_learning_diary
+msgid "Bemerkungen"
+msgstr "Comments"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:211
+#@ bp_learning_diary
+msgid "Die Anfrage wurde gesendet und wird innerhalb von 2 Wochen bearbeitet."
+msgstr "Your request will be answered within the next 2 weeks."
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:236
+#@ bp_learning_diary
+msgid "Bitte alle Felder mit * ausf&uuml;llen."
+msgstr "Please fill in all fields that are signed with *"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:272
+#@ bp_learning_diary
+msgid "Anfrage für Massenimport"
+msgstr "Request bulk user account creation"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:300
+#@ bp_learning_diary
+msgid "Zugang zur Mehrfachregistration beantragen"
+msgstr "Apply for access to bulk user account import"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:304
+#@ bp_learning_diary
+msgid "Hier kannst Du mehrere Nutzer gleichzeitig erfassen. Um diese Funktion zu nutzen, musst Du einen Zugang beantragen, indem Du untenstehendes Formular ausfüllst."
+msgstr "Here you can create a number of users simultaneously. To get access to the bulk user account functions you have to request permission using the form below."
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:308
+#@ bp_learning_diary
+msgid "Wir benötigen diese Angaben um einen Missbrauch dieser Funktion zu vermeiden. Nach der Prüfung Deiner Angaben wird diese Funktion für dich freigeschaltet."
+msgstr "We need these details to avoid a misuse of bulk user account creation. After we have positively checked your information we will give you access to this function."
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:321
+#@ bp_learning_diary
+msgid "Vorname, Nachname"
+msgstr "First name, last name"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:325
+#@ bp_learning_diary
+msgid "Name der Bildungsinstitution"
+msgstr "Your institution"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:333
+#@ bp_learning_diary
+msgid "PLZ, Ort"
+msgstr "postal code, city"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:337
+#@ bp_learning_diary
+msgid "Ihre Rolle in der Bildungsinstitution"
+msgstr "Your professional position"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:352
+#@ bp_learning_diary
+msgid "* Diese Angaben sind Pflichtangaben."
+msgstr "* this information is mandatory"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:416
+#@ bp_learning_diary
+msgid "Vor- und Nachnamen angeben. "
+msgstr "Please enter your first name and last name."
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:482
+#@ bp_learning_diary
+msgid "Lerntagebuch erfolgreich erstellt"
+msgstr "Your learninglog has been successfully created."
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:494
+#@ bp_learning_diary
+msgid "1. Benutzername, Vorname, Nachname und E-Mail-Adresse des/der Lernenden eingeben."
+msgstr "1. Please enter username, first name, last name and email address of the learner"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:495
+#@ bp_learning_diary
+msgid "2. Die/den Lernende(n) einer Gruppe zuordnen."
+msgstr "2. Assign learners to a group"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:496
+#@ bp_learning_diary
+msgid "3. Die/der Lernende bekommt eine E-Mail mit ihren/seinen Nutzernamen und Passwort an die angegebene E-Mail-Adresse."
+msgstr "3. Learners will receive an email with their username and passwort."
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:512
+#@ bp_learning_diary
+msgid "Vor- und Nachname"
+msgstr "First name and last name"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:516
+#@ bp_learning_diary
+msgid "E-Mail-Adresse"
+msgstr "email address"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:520
+#@ bp_learning_diary
+msgid "Nutzer der folgenden Gruppe(n) anschliessen"
+msgstr "Assign to the following group"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:549
+#@ bp_learning_diary
+msgid "Der Lernende oder die Lernende bekommt eine E-Mail mit dem Benutzernamen und Passwort zugesendet."
+msgstr "Learners will receive an email with their username and passwort. "
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:561
+#@ bp_learning_diary
+msgid "Lernende/r registrieren"
+msgstr "Register learner"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:802
+#@ bp_learning_diary
+msgid "1. Gib unten den Benutzernamen, Vornamen, Nachnamen und die E-Mailadresse der Lernenden ein."
+msgstr "1. Please enter username, first name, last name and email address of the learner"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:803
+#@ bp_learning_diary
+msgid "2. Unterteile die Daten mit einem \";\". Zum Beispiel nutzername;Vorname Nachname;email@domainname.ch."
+msgstr "2. Use \";\" as a separation marker. For example: johndoe;john doe;johndoe@domainname.com"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:804
+#@ bp_learning_diary
+msgid "3. Die Lernenden erhalten eine E-Mail mit ihrem Nutzernamen und dem Passwort an die angegebene Mailadresse."
+msgstr "3. Learners will receive an email with their username and password. "
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:817
+#@ bp_learning_diary
+msgid "Sie k&ouml;nnen die folgenden Daten in das untenstehende Textfeld kopieren:"
+msgstr "You can copy the following data in the text form below:"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:829
+#@ bp_learning_diary
+msgid "Nutzer der folgenden Gruppe anschliessen"
+msgstr "Assign users to the following group"
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:863
+#@ bp_learning_diary
+msgid "Die Lernenden bekommen eine E-Mail mit ihrem Benutzernamen und Passwort zugesendet."
+msgstr "Learners will receive an email with their username and password. "
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:143
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:508
+#: bp-themes/learninglog-home/sidebar.php:35
+#@ default
+#@ buddypress
+msgid "Username"
+msgstr ""
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:144
+#@ default
+msgid "Name"
+msgstr ""
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:146
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:329
+#@ default
+msgid "Address"
+msgstr ""
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:170
+#@ default
+msgid "Grant permission"
+msgstr ""
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:176
+#@ default
+msgid "Deny permission"
+msgstr ""
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:290
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:346
+#@ default
+msgid "Submit"
+msgstr ""
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:475
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:783
+#@ default
+msgid "Error"
+msgstr ""
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:692
+#@ buddypress
+msgid "errors"
+msgstr ""
+
+#: bp-bulk-import-blogs/bp-bulk-import-blogs.php:855
+#@ default
+msgid "Information"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:56
+#: bp-learning-diary/learning-diary-tasks-edit.php:1480
+#: bp-learning-diary/learning-diary-tasks-edit.php:2286
+#@ default
+msgid "Title"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:57
+#: bp-learning-diary/learning-diary-tasks-edit.php:1803
+#: bp-learning-diary/learning-diary-tasks-edit.php:2290
+#@ default
+msgid "Author"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:58
+#: bp-learning-diary/learning-diary-tasks-edit.php:2297
+#@ default
+msgid "Date"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:110
+#: bp-learning-diary/learning-diary-tasks-sidebar-widget.php:129
+#@ default
+msgid "View all"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:268
+#: bp-learning-diary/learning-diary-tasks-dashboard-widgets.php:270
+#@ buddypress
+msgid "or"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:135
+#: bp-learning-diary/learning-diary-tasks-edit.php:139
+#: bp-learning-diary/learning-diary-tasks-register-blog.php:286
+#: bp-learning-diary/learning-diary-tasks-register-blog.php:289
+#@ buddypress
+msgid "This is a required field"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:763
+#: bp-learning-diary/learning-diary-tasks-edit.php:769
+#: bp-learning-diary/learning-diary-tasks-edit.php:1812
+#@ default
+msgid "&laquo; Back"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:814
+#: bp-learning-diary/learning-diary-tasks-edit.php:843
+#: bp-learning-diary/learning-diary-tasks-edit.php:1595
+#: bp-learning-diary/learning-diary-tasks-edit.php:2361
+#: bp-learning-diary/learning-diary-tasks-sidebar-widget.php:101
+#@ default
+msgid "Edit"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1034
+#@ default
+msgid "Save as Draft"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1038
+#@ default
+msgid "Publish"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1042
+#@ default
+msgid "Submit for Review"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1303
+#@ default
+msgid "All"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1306
+#@ default
+msgid "Drafts"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1307
+#: bp-learning-diary/learning-diary-tasks-edit.php:1601
+#: bp-learning-diary/learning-diary-tasks-edit.php:2264
+#@ default
+msgid "Trash"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1326
+#: bp-learning-diary/learning-diary-tasks-edit.php:1797
+#: bp-learning-diary/learning-diary-tasks-edit.php:2160
+#@ default
+msgid "&laquo;"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1327
+#: bp-learning-diary/learning-diary-tasks-edit.php:1797
+#: bp-learning-diary/learning-diary-tasks-edit.php:2160
+#@ default
+msgid "&raquo;"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1454
+#: bp-learning-diary/learning-diary-tasks-edit.php:1747
+#: bp-learning-diary/learning-diary-tasks-edit.php:1827
+#: bp-learning-diary/learning-diary-tasks-edit.php:2081
+#: bp-learning-diary/learning-diary-tasks-edit.php:2274
+#: bp-learning-diary/learning-diary-tasks-edit.php:2396
+#, php-format
+#@ default
+msgid "Displaying %s&#8211;%s of %s"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1481
+#@ default
+msgid "Text"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1585
+#@ default
+msgid "Draft"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1603
+#@ default
+msgid "Restore"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1604
+#@ default
+msgid "Delete Permanently"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1637
+#@ default
+msgid "of"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1711
+#@ default
+msgid "Y-m-d \\<\\b\\r \\/\\> g:i:s a"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1803
+#@ default
+msgid "Content"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1803
+#@ default
+msgid "Comments"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:1803
+#@ default
+msgid "Last Updated"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-edit.php:2063
+#@ default
+msgid "No blogs found."
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:202
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:218
+#: bp-themes/learninglog-user/index.php:20
+#: bp-themes/learninglog-user/index.php:26
+#: bp-themes/learninglog-user/single.php:23
+#: bp-themes/learninglog-user/single.php:29
+#, php-format
+#@ buddypress
+msgid "by %s"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:209
+#: bp-themes/learninglog-home/index.php:25
+#: bp-themes/learninglog-user/index.php:24
+#: bp-themes/learninglog-user/single.php:27
+#@ buddypress
+msgid "Permanent Link to"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:215
+#: bp-themes/learninglog-user/index.php:26
+#: bp-themes/learninglog-user/single.php:29
+#@ buddypress
+msgid "in"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:223
+#: bp-themes/learninglog-home/index.php:31
+#: bp-themes/learninglog-user/index.php:29
+#: bp-themes/learninglog-user/single.php:33
+#@ buddypress
+msgid "Read the rest of this entry &rarr;"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:230
+#: bp-themes/learninglog-user/index.php:35
+#: bp-themes/learninglog-user/single.php:40
+#@ buddypress
+msgid "Tags: "
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:233
+#: bp-themes/learninglog-user/index.php:35
+#: bp-themes/learninglog-user/single.php:40
+#@ buddypress
+msgid "No Comments &#187;"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:234
+#: bp-themes/learninglog-user/index.php:35
+#: bp-themes/learninglog-user/single.php:40
+#@ buddypress
+msgid "1 Comment &#187;"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:235
+#: bp-themes/learninglog-user/index.php:35
+#: bp-themes/learninglog-user/single.php:40
+#@ buddypress
+msgid "% Comments &#187;"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:250
+#: bp-themes/learninglog-home/index.php:46
+#: bp-themes/learninglog-user/index.php:46
+#: bp-themes/learninglog-user/single.php:14
+#@ buddypress
+msgid "&larr; Previous Entries"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-group-activity.php:253
+#: bp-themes/learninglog-home/index.php:47
+#: bp-themes/learninglog-user/index.php:47
+#: bp-themes/learninglog-user/single.php:15
+#@ buddypress
+msgid "Next Entries &rarr;"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-options.php:76
+#: bp-learning-diary/learning-diary-tasks-options.php:111
+#: bp-learning-diary/learning-diary-tasks-options.php:125
+#: simplicity/simplicity.php:176
+#@ default
+msgid "Save Changes"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-options.php:110
+#: bp-social-access/social-access-control-options.php:56
+#: bp-social-access/social-access-control-options.php:74
+#@ default
+msgid "Update"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-register-blog.php:228
+#@ default
+msgid "Role"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-register-blog.php:228
+#: bp-learning-diary/learning-diary-tasks-register-blog.php:243
+#@ buddypress
+msgid "(required)"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-setup.php:87
+#@ bp_learning_diary
+msgid "Lerntagebuch Komponenten-Installation"
+msgstr "Learninglog Component Setup"
+
+#: bp-learning-diary/learning-diary-tasks-setup.php:90
+#@ buddypress
+msgid "Settings Saved"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-setup.php:107
+#@ buddypress
+msgid "Enabled"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-setup.php:109
+#@ buddypress
+msgid "Disabled"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-setup.php:116
+#@ buddypress
+msgid "Save Settings"
+msgstr ""
+
+#: bp-learning-diary/learning-diary-tasks-sidebar-widget.php:179
+#@ default
+msgid "Title:"
+msgstr ""
+
+#: bp-learning-diary-admin-css/bp-learning-diary-admin-css.php:58
+#: bp-learning-diary-admin-css/bp-learning-diary-admin-css.php:63
+#: bp-themes/learninglog-home/header.php:44
+#: bp-themes/learninglog-home/header.php:50
+#: bp-themes/learninglog-user/header.php:44
+#: bp-themes/learninglog-user/header.php:49
+#@ buddypress
+#@ default
+msgid "Home"
+msgstr ""
+
+#: bp-learning-diary-admin-css/bp-learning-diary-admin-css.php:73
+#: bp-themes/learninglog-home/functions.php:10
+#: bp-themes/learninglog-home/header.php:64
+#: bp-themes/learninglog-user/functions.php:8
+#: bp-themes/learninglog-user/header.php:63
+#@ buddypress
+#@ default
+msgid "Administration"
+msgstr ""
+
+#: bp-learning-diary-admin-css/bp-learning-diary-admin-css.php:80
+#: bp-themes/learninglog-home/header.php:71
+#: bp-themes/learninglog-user/header.php:70
+#@ buddypress
+msgid "Groups"
+msgstr ""
+
+#: bp-learning-diary-admin-css/bp-learning-diary-admin-css.php:86
+#@ buddypress
+msgid "Members"
+msgstr ""
+
+#: bp-learning-diary-admin-css/bp-learning-diary-admin-css.php:106
+#@ buddypress
+msgid "My Profile"
+msgstr ""
+
+#: bp-learning-diary-admin-css/bp-learning-diary-admin-css.php:113
+#: bp-themes/learninglog-home/sidebar.php:18
+#@ buddypress
+msgid "Log Out"
+msgstr ""
+
+#: bp-social-access/social-access-control-edit-post.php:236
+#@ bp_learning_diary
+msgid "Folgenden Gruppen zuordnen:"
+msgstr "Assign to the following groups:"
+
+#: bp-social-access/social-access-control-options.php:70
+#@ default
+msgid "Reset All Options"
+msgstr ""
+
+#: bp-social-access/social-access-control.php:48
+#@ social-access-control
+msgid "Sorry, you do not have sufficient privileges to view this post."
+msgstr ""
+
+#: bp-themes/learninglog-home/header.php:18
+#: bp-themes/learninglog-user/header.php:18
+#@ buddypress
+msgid "Site Wide Activity RSS Feed"
+msgstr ""
+
+#: bp-themes/learninglog-home/header.php:22
+#: bp-themes/learninglog-user/header.php:22
+#@ buddypress
+msgid "Activity RSS Feed"
+msgstr ""
+
+#: bp-themes/learninglog-home/header.php:26
+#: bp-themes/learninglog-user/header.php:26
+#@ buddypress
+msgid "Group Activity RSS Feed"
+msgstr ""
+
+#: bp-themes/learninglog-home/header.php:29
+#: bp-themes/learninglog-user/header.php:29
+#@ buddypress
+msgid "Blog Posts RSS Feed"
+msgstr ""
+
+#: bp-themes/learninglog-home/header.php:30
+#: bp-themes/learninglog-user/header.php:30
+#@ buddypress
+msgid "Blog Posts Atom Feed"
+msgstr ""
+
+#: bp-themes/learninglog-home/index.php:53
+#: bp-themes/learninglog-user/index.php:53
+#@ buddypress
+msgid "Not Found"
+msgstr ""
+
+#: bp-themes/learninglog-home/index.php:54
+#: bp-themes/learninglog-user/index.php:54
+#@ buddypress
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr ""
+
+#: bp-themes/learninglog-home/sidebar.php:38
+#@ buddypress
+msgid "Password"
+msgstr ""
+
+#: bp-themes/learninglog-home/sidebar.php:41
+#@ buddypress
+msgid "Remember Me"
+msgstr ""
+
+#: bp-themes/learninglog-home/sidebar.php:44
+#@ default
+msgid "Log In"
+msgstr ""
+
+#: bp-themes/learninglog-user/index.php:26
+#: bp-themes/learninglog-user/single.php:29
+#@ default
+msgid "F j, Y"
+msgstr ""
+
+#: bp-themes/learninglog-user/single.php:37
+#@ buddypress
+msgid "<p><strong>Pages:</strong> "
+msgstr ""
+
+#: bp-themes/learninglog-user/single.php:49
+#@ buddypress
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+

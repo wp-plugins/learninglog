@@ -1,12 +1,11 @@
 <?php
 /*
- * Plugin Name: Learning Diary Tasks
- * Plugin URI:  http://www.ims.phz.ch
- * Description: For creating learning diary tasks for other users of the weblog
- * Version:     0.04
+ * Plugin Name: Learninglog
+ * Plugin URI:  http://learninglog.org
+ * Description: Learninglog offers teachers and learners advanced functions to use Wordpress as a learning tool.
+ * Version:     2.1
  * Requires at least: WordPress 3.0 with Multisite / BuddyPress 1.2.4.1
- * Author:      Thomas Moser
- * Author URI:  http://www.ims.phz.ch
+ * Author:      Thomas Moser, Andrea Cantieni
  * Text Domain: bp_learning_diary
  * Site Wide Only: true
 */

@@ -95,7 +95,7 @@ function simplicity_disable_menus() {
  
 	}else{
 		$disabled_menu_items = array();
-		$disabled_submenu_items = array("index.php", "my-sites.php", "nav-menus.php", "themes.php"); //disable useless dashboard submenus forever
+		$disabled_submenu_items = array("index.php", "my-sites.php", "nav-menus.php");//, "themes.php"); //disable useless dashboard submenus forever
 	}
 	
 	foreach($menu as $index => $menu_item)	{

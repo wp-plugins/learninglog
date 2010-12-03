@@ -138,6 +138,10 @@ class LearningDiarySetup
 			}
 		}
 		
+		//deactivate admin css on install
+		if($all){
+			update_site_option('admin_css_options', 'off');
+		}
 		//var_dump(get_included_files());die();
 	
 	}

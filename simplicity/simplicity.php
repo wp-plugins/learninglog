@@ -219,7 +219,7 @@ function simplicity_default_options() {
 	$options = array(
 		# 2 means activated
 		# 1 means deactivated
-		'simplicity_state' => 2,
+		'simplicity_state' => is_super_admin() ? '1' : '2',
 	);
 	return $options;
 }

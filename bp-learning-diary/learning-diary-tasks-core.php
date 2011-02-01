@@ -166,27 +166,27 @@ class LearningDiaryTasks {
 		$gr_id_sql = $group_id > 0 ? " AND m.meta_key = 'group' AND m.meta_value = $group_id " : " ";
 		$gr_meta_sql = $group_id > 0 ? " LEFT JOIN " . $wpdb->base_prefix . self::META_TASK_TABLE_NAME . " m ON t.ID = m.task_id " : " ";
 		
-		// Select tasks that are published by the teacher
+		// Select tasks that are published by the teacher AND already visible
 		$tasks ["tasks"] = $wpdb->get_results ( "SELECT * FROM " . $wpdb->base_prefix . self::TASK_TABLE_NAME . " t 
 			LEFT JOIN " . $wpdb->base_prefix . self::USER_TASK_TABLE_NAME . " u 
-			ON t.ID = u.task_id" . $gr_meta_sql . "WHERE u.user_id=$userid AND t.task_status <> 'trash' AND t.task_status <> 'drafts' AND $user_task_status " . $gr_id_sql . "ORDER BY t.$order_by $order 
+			ON t.ID = u.task_id" . $gr_meta_sql . "WHERE u.user_id=$userid AND UNIX_TIMESTAMP(t.publish_date) <= " . time() . " AND t.task_status <> 'trash' AND t.task_status <> 'drafts' AND $user_task_status " . $gr_id_sql . "ORDER BY t.$order_by $order 
 			LIMIT $start, $limit" );
 		
 		$tasks ["count_new_posts"] = $wpdb->get_var ( "SELECT count(*) FROM " . $wpdb->base_prefix . self::TASK_TABLE_NAME . " t
 			LEFT JOIN " . $wpdb->base_prefix . self::USER_TASK_TABLE_NAME . " u 
-			ON t.ID = u.task_id" . $gr_meta_sql . "WHERE u.user_id=$userid AND t.task_status <> 'trash' AND t.task_status <> 'drafts' AND (u.task_status='')" . $gr_id_sql );
+			ON t.ID = u.task_id" . $gr_meta_sql . "WHERE u.user_id=$userid AND UNIX_TIMESTAMP(t.publish_date) <= " . time() . " AND t.task_status <> 'trash' AND t.task_status <> 'drafts' AND (u.task_status='')" . $gr_id_sql );
 		
 		$tasks ["count_open_posts"] = $wpdb->get_var ( "SELECT count(*) FROM " . $wpdb->base_prefix . self::TASK_TABLE_NAME . " t 
 			LEFT JOIN " . $wpdb->base_prefix . self::USER_TASK_TABLE_NAME . " u 
-			ON t.ID = u.task_id" . $gr_meta_sql . "WHERE u.user_id=$userid AND t.task_status <> 'trash' AND t.task_status <> 'drafts' AND (u.task_status='draft' OR u.task_status='')" . $gr_id_sql );
+			ON t.ID = u.task_id" . $gr_meta_sql . "WHERE u.user_id=$userid AND UNIX_TIMESTAMP(t.publish_date) <= " . time() . " AND t.task_status <> 'trash' AND t.task_status <> 'drafts' AND (u.task_status='draft' OR u.task_status='')" . $gr_id_sql );
 		
 		$tasks ["count_solved_posts"] = $wpdb->get_var ( "SELECT count(*) FROM " . $wpdb->base_prefix . self::TASK_TABLE_NAME . " t
 			LEFT JOIN " . $wpdb->base_prefix . self::USER_TASK_TABLE_NAME . " u 
-			ON t.ID = u.task_id" . $gr_meta_sql . "WHERE u.user_id=$userid AND t.task_status <> 'trash' AND t.task_status <> 'drafts' AND u.task_status='publish'" . $gr_id_sql );
+			ON t.ID = u.task_id" . $gr_meta_sql . "WHERE u.user_id=$userid AND UNIX_TIMESTAMP(t.publish_date) <= " . time() . " AND t.task_status <> 'trash' AND t.task_status <> 'drafts' AND u.task_status='publish'" . $gr_id_sql );
 		
 		$tasks ["count_trash_posts"] = $wpdb->get_var ( "SELECT count(*) FROM " . $wpdb->base_prefix . self::TASK_TABLE_NAME . " t 
 			LEFT JOIN " . $wpdb->base_prefix . self::USER_TASK_TABLE_NAME . " u 
-			ON t.ID = u.task_id" . $gr_meta_sql . "WHERE u.user_id=$userid AND t.task_status <> 'trash' AND t.task_status <> 'drafts' AND u.task_status='trash'" . $gr_id_sql );
+			ON t.ID = u.task_id" . $gr_meta_sql . "WHERE u.user_id=$userid AND UNIX_TIMESTAMP(t.publish_date) <= " . time() . " AND t.task_status <> 'trash' AND t.task_status <> 'drafts' AND u.task_status='trash'" . $gr_id_sql );
 		
 		return $tasks;
 	

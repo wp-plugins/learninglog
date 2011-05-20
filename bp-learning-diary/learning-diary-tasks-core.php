@@ -359,10 +359,13 @@ class LearningDiaryTasks {
 					}
 				}
 			}
-			$checkedusers = array_keys ( $post_data ["checkedusers"] ["specific_users"] );
+			if($post_data ["checkedusers"] ["specific_users"]){
+				$checkedusers = array_keys ( $post_data ["checkedusers"] ["specific_users"] );
+			}
 			//$checkedusers = array_keys($post_data["checkedusers"]["specific_groups"]);
-			$checkedgroups = array_keys ( $post_data ["checkedgroups"] );
-		
+			if($post_data ["checkedgroups"]) {
+				$checkedgroups = array_keys ( $post_data ["checkedgroups"] );
+			}
 		//}
 		
 

@@ -353,7 +353,7 @@ class LearningDiaryTasksEdit extends LearningDiaryTasks {
 		if ($task_id and ! $count_answers) {
 			include_once ('learning-diary-tasks-answer-format.php');
 			
-			$answer_format_ques = wp_kses ( $_POST ['answer_format_ques'] );
+			$answer_format_ques = wp_kses ( $_POST ['answer_format_ques'], array() );
 			$answer_format_format = $_POST ['answer_format_format'];
 			$answer_format_value = $_POST [$answer_format_format];
 			
@@ -930,7 +930,12 @@ class LearningDiaryTasksEdit extends LearningDiaryTasks {
 			<div class="textarea-wrap bp-learning-diary-wrap">
 			<?php
 		
-			$post_data = array ();
+			$post_data = array();
+			$post_data ["checkedusers"] = array();
+			$post_data ["checkedgroups"] = array();
+			$post_data ["checkedusers"] ["specific_groups"] = array();
+			$post_data ["checkedusers"] ["specific_users"] = array();
+			
 			$post_data ["sent_to"] = $_POST ["learning-diary-tasks-visible-for"];
 			$post_data ["checkedgroups"] = $_POST ["learning-diary-tasks-user-post-access-setting"];
 			$post_data ["checkedusers"] ["specific_groups"] = $_POST ["learning-diary-tasks-user-post-access-setting-specific-groups"];

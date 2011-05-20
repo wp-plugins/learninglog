@@ -93,4 +93,8 @@ function lerntagebuch_user_add_custom_header_support() {
 }
 
 add_action( 'init', 'lerntagebuch_user_add_custom_header_support' );
+
+//Disable Admin Bar in WordPress/Buddypress
+add_filter( 'show_admin_bar', '__return_false' );
+define('BP_DISABLE_ADMIN_BAR', true);
 ?>

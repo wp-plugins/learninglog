@@ -132,4 +132,8 @@ function add_primary_blog_to_bp_group_member_domain($groub_member_domain){
 	else
 		echo $groub_member_domain; //if user doesn't have a blog: return member link
 }
+
+//Disable Admin Bar in WordPress/Buddypress
+add_filter( 'show_admin_bar', '__return_false' );
+define('BP_DISABLE_ADMIN_BAR', true);
 ?>

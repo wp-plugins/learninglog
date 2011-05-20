@@ -21,6 +21,11 @@ body {
 	display:none;
 }
 
+div#wp-admin-bar > .padder{
+	max-width:960px !important;
+
+}
+
 #adminmenu {
 	float: left;
 	clear: left;

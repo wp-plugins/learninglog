@@ -1618,7 +1618,28 @@ class LearningDiaryTasksEdit extends LearningDiaryTasks {
 							<td valign="top">
 							<p>
 							<?php
-							$result = substr ( strip_tags ( htmlspecialchars_decode ( html_entity_decode ( stripslashes ( $the_learning_diary ["post_content"] ) ) ) ), 0, strpos ( htmlspecialchars_decode ( html_entity_decode ( stripslashes ( strip_tags ( $the_learning_diary ["post_content"] ) ) ) ), ' ', 120 ) - 1 );
+							
+							$result_clean = strip_tags ( 
+								htmlspecialchars_decode ( 
+									html_entity_decode ( 
+										stripslashes ( 
+											$the_learning_diary ["post_content"] 
+										) 
+									) 
+								) 
+							);
+							
+							$result = substr ( 
+								$result_clean, 
+								0, 
+								strpos ( 
+									strip_tags ( 
+										$result_clean
+									), 
+									' ', 
+									min(120, strlen(strip_tags ($result_clean))) 
+								) - 1 
+							);
 							echo $result;
 							?>
 							</p>

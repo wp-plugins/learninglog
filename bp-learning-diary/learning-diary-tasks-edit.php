@@ -206,8 +206,10 @@ class LearningDiaryTasksEdit extends LearningDiaryTasks {
 				
 				$user_allready_answered = $wpdb->get_row ( "SELECT user_id FROM `" . $wpdb->base_prefix . self::USER_TASK_TABLE_NAME . "` WHERE task_id = $task_id AND task_status<>''", ARRAY_N );
 				
-				foreach ( $user_allready_answered as $the_user_id ) {
-					$additional_sql .= " AND user_id<>$the_user_id";
+				if( is_array($user_allready_answered) ) {
+					foreach ( $user_allready_answered as $the_user_id ) {
+						$additional_sql .= " AND user_id<>$the_user_id";
+					}
 				}
 				
 				/*
@@ -238,9 +240,10 @@ class LearningDiaryTasksEdit extends LearningDiaryTasks {
 					//Check if user allready answered the task
 					//If he did: continue without inserting new row
 					
-
-					if (in_array ( $the_user, $user_allready_answered ))
-						continue;
+					if(is_array($user_allready_answered)){
+						if (in_array ( $the_user, $user_allready_answered ))
+							continue;
+					}
 					
 					$data = array ("task_id" => $task_id, "user_id" => $the_user );
 					

@@ -231,18 +231,20 @@ add_action ( 'admin_menu', 'learning_diary_tasks_add_admin_menu_tasks', 10 );
  */
 
 function learninglog_diary_tasks_add_network_admin_menu() {
-	$learningdiarysetup = new LearningDiarySetup();
+	if(is_super_admin()) {
+		$learningdiarysetup = new LearningDiarySetup();
 	
-	$page = add_menu_page ( 
-		__( "Lerntagebuchadmin", 'bp_learning_diary' ), 
-		__( "Lerntagebuchadmin", 'bp_learning_diary' ), 
-		2, 
-		//basename ( __FILE__ ), 
-		'lerntagebuchadmin',
-		//array (&$learningdiaryedit, 'learning_diary_tasks_edit_page' ), 
-		array (&$learningdiarysetup, 'learning_diary_setup_page' ), 
-		"" 
-	);	
+		$page = add_menu_page ( 
+			__( "Lerntagebuchadmin", 'bp_learning_diary' ), 
+			__( "Lerntagebuchadmin", 'bp_learning_diary' ), 
+			2, 
+			//basename ( __FILE__ ), 
+			'lerntagebuchadmin',
+			//array (&$learningdiaryedit, 'learning_diary_tasks_edit_page' ), 
+			array (&$learningdiarysetup, 'learning_diary_setup_page' ), 
+			"" 
+		);
+	}
 }
 
 add_action( 'network_admin_menu', 'learninglog_diary_tasks_add_network_admin_menu', 10);

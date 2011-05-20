@@ -167,10 +167,11 @@ class LearningDiaryTasksGroupActivity
 		$prevp = false;
 		$ppp = 10; //posts per page
 		
+		/*pagination*/
+		$page = $_GET['page'] ? $_GET['page'] : 1;
+		
 		foreach($all_posts_ids as $key => $post_id){
 		
-			/*pagination*/
-			$page = $_GET['page'] ? $_GET['page'] : 1;
 		
 			if($key >= $page*$ppp-1 && $key < count($all_posts_ids)-1) {
 				$nextp = true;
@@ -178,6 +179,7 @@ class LearningDiaryTasksGroupActivity
 			}
 		
 			if($key < ($page-1)*$ppp) {
+			//if($key < $page*$ppp-1){
 				$prevp = true;
 				continue;
 			}
@@ -245,18 +247,16 @@ class LearningDiaryTasksGroupActivity
 					</div> <!-- .post -->
 				
 				<?php endwhile; ?>
-
-				<div class="navigation">
-					<?php if($nextp):?>
-						<div class="alignleft"><a href="?page=<?php echo $page+1 ?>"><?php _e( '&larr; Previous Entries', 'buddypress' ) ?></a></div>
-					<?php endif;?>
-					<?php if( ($prevp && $nextp && $page > 1) || ($key == count($all_posts_ids)-1 && $page > 1) ):?>
-						<div class="alignright"><a href="?page=<?php echo $page-1 ?>"><?php _e( 'Next Entries &rarr;', 'buddypress' ) ?></a></div>
-					<?php endif;?>
-				</div> <!-- .navigation -->
-			
 			<?php endif; //have_posts()?> 
-
+			<div class="navigation">
+				<?php if($nextp):?>
+					<div class="alignleft"><a href="?page=<?php echo $page+1 ?>"><?php _e( '&larr; Previous Entries', 'buddypress' ) ?></a></div>
+				<?php endif;?>
+				<?php if( ($prevp && $nextp && $page > 1) || ($key == count($all_posts_ids)-1 && $page > 1) ):?>
+					<div class="alignright"><a href="?page=<?php echo $page-1 ?>"><?php _e( 'Next Entries &rarr;', 'buddypress' ) ?></a></div>
+				<?php endif;?>
+			</div> <!-- .navigation -->
+			
 			<?php if($nextp) break;
 		}//end foreach post
 	

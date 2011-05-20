@@ -25,7 +25,9 @@ function response_users_to_select() {
 	$gids ['p'] = $_GET ["gids_p"];
 	$gids ['n'] = $_GET ["gids_n"];
 	
-	$mem_ids = array ();
+	$mem_ids = array();
+	$mem_ids['p'] = array();
+	$mem_ids['n'] = array();
 	$pn = array ('p', 'n' );
 	
 	//for selected (p) and not selected (n)

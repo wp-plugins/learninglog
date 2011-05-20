@@ -21,9 +21,16 @@ function response_answer_format() {
  */
 
 function response_users_to_select() {
+	$gids ['p'] = array();
+	$gids ['n'] = array();
+	
 	//gets ARRAYs from client
-	$gids ['p'] = $_GET ["gids_p"];
-	$gids ['n'] = $_GET ["gids_n"];
+	if(isset($_GET ["gids_p"])) {
+		$gids ['p'] = $_GET ["gids_p"];
+	}
+	if(isset($_GET ["gids_n"])) {
+		$gids ['n'] = $_GET ["gids_n"];
+	}
 	
 	$mem_ids = array();
 	$mem_ids['p'] = array();
@@ -32,15 +39,17 @@ function response_users_to_select() {
 	
 	//for selected (p) and not selected (n)
 	for($i = 0; $i < 2; $i ++) {
-		//for each group
-		foreach ( $gids [$pn [$i]] as $gid ) {
-			//$members = 	groups_get_group_members($gid);
-			$members = BP_Groups_Member::get_all_for_group ( $gid, false, false, false, true );
-			//for each member of group
-			foreach ( $members ['members'] as $member ) {
-				//only deselect if not selected by any other group
-				if (! in_array ( $member->user_id, $mem_ids ['p'] )) {
-					$mem_ids [$pn [$i]] [] = $member->user_id;
+		if( is_array($gids [$pn [$i]])) {
+			//for each group
+			foreach ( $gids [$pn [$i]] as $gid ) {
+				//$members = 	groups_get_group_members($gid);
+				$members = BP_Groups_Member::get_all_for_group ( $gid, false, false, false, true );
+				//for each member of group
+				foreach ( $members ['members'] as $member ) {
+					//only deselect if not selected by any other group
+					if (! in_array ( $member->user_id, $mem_ids ['p'] )) {
+						$mem_ids [$pn [$i]] [] = $member->user_id;
+					}
 				}
 			}
 		}

@@ -30,7 +30,7 @@
 							
 								<?php the_excerpt( __( 'Read the rest of this entry &rarr;', 'buddypress' ) ); ?>
 								
-								<?php wp_trim_excerpt(); ?>
+								<?php //wp_trim_excerpt(); ?>
 							</div>
 
 						</div>

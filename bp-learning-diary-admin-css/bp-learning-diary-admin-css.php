@@ -9,12 +9,25 @@ add_action('admin_print_styles', 'learning_diary_admin_template_add_style');
 
 // Add alternative header
 add_action('admin_notices','learning_diary_admin_template_print_header');
+add_action('network_admin_notices','learning_diary_admin_template_print_header');
 
 // Add sidebar loginout
 add_action('adminmenu','learning_diary_admin_menu_header');
 
 // Add sidebar loginout
 add_action('admin_head','learning_diary_admin_template_print_style');
+
+
+/* 
+ * Add link (menu item) to the network admin section (new in wp 3.1) and back to the site admin section 
+*/
+
+global $wp_version;
+
+if ( version_compare( $wp_version,"3.1",">=" ) && is_super_admin()) {
+	add_action( 'network_admin_menu', 'learninglog_diary_network_admin_menu', 10);
+	add_action( 'admin_menu', 'learninglog_diary_site_admin_menu', 10);
+}
 
 /*
  * Add Css Style Sheet in WP Admin Section
@@ -129,6 +142,38 @@ function ld_hide_useless_functions_on_custom_header_page()
 }
 
 add_action("admin_print_styles-appearance_page_custom-header", "ld_hide_useless_functions_on_custom_header_page");
+
+/*
+ * Add link (menu item) to the site admin section and in the network admin section (new in wp 3.1) 
+ */
+
+function learninglog_diary_network_admin_menu()
+{
+	global $menu;
+	
+	$super_admin_menu = array(__('Site Admin'), 'manage_network', '../ ', '', 'menu-top menu-top-first menu-icon-site', 'menu-site', 'div');
+	$separator = array( '', 'read', 'separator1', '', 'wp-menu-separator' );
+	
+	array_unshift($menu, $separator);
+	array_unshift($menu, $super_admin_menu);
+
+}
+
+/*
+ * Add link (menu item) to the network admin section (new in wp 3.1) in the site admin section 
+ */
+
+function learninglog_diary_site_admin_menu()
+{
+	global $menu;
+		
+	$site_admin_menu = array(__('Network Admin'), 'manage_network', 'network/', '', 'menu-top menu-top-first menu-icon-site', 'menu-site', 'div');
+	$separator = array( '', 'read', 'separator1', '', 'wp-menu-separator' );
+	
+	array_unshift($menu, $separator);
+	array_unshift($menu, $site_admin_menu);
+
+}
 
 /*
  * Add a message to the registration page to make sure they do activate their accounts

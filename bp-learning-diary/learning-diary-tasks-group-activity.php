@@ -110,6 +110,7 @@ class LearningDiaryTasksGroupActivity
 	public function show_group_activity()
 	{
 		global $bp_deactivated;
+		global $user_ID;
 		
 		//simulate bp-activitiy deactivation to prevent bp-activitiy messages if this component is activated
 		$bp_deactivated['bp-activity.php'] = 1;
@@ -165,7 +166,7 @@ class LearningDiaryTasksGroupActivity
 		$nextp = false;
 		$prevp = false;
 		$ppp = 10; //posts per page
-	
+		
 		foreach($all_posts_ids as $key => $post_id){
 		
 			/*pagination*/
@@ -253,14 +254,19 @@ class LearningDiaryTasksGroupActivity
 						<div class="alignright"><a href="?page=<?php echo $page-1 ?>"><?php _e( 'Next Entries &rarr;', 'buddypress' ) ?></a></div>
 					<?php endif;?>
 				</div> <!-- .navigation -->
+			
 			<?php endif; //have_posts()?> 
 
-			<?php if($nextp) break;	
+			<?php if($nextp) break;
 		}//end foreach post
 	
 		wp_reset_query();
+
+		//get member's primary (and only) blog
+		$blog = get_active_blog_for_user($user_ID);
 	
-		restore_current_blog();
+		switch_to_blog($blog->blog_id);
+		//restore_current_blog();
 	
 		?>
 		</div><!-- div 3 -->

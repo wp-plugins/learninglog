@@ -280,7 +280,7 @@ class LearningDiaryTasks {
 	 * @since unknown
 	 */
 	
-	protected function choose_users_for_task($task_id = 0, $post_data = 0) {
+	protected function choose_users_for_task($task_id = 0, $post_data = array()) {
 		global $post;
 		global $current_user;
 		global $wpdb;

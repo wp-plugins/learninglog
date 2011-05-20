@@ -166,8 +166,28 @@ function learninglog_diary_network_admin_menu()
 function learninglog_diary_site_admin_menu()
 {
 	global $menu;
-		
-	$site_admin_menu = array(__('Network Admin'), 'manage_network', 'network/', '', 'menu-top menu-top-first menu-icon-site', 'menu-site', 'div');
+	
+	//snipped from wp-admin/menu.php
+	$plugin_update_count = $theme_update_count = $wordpress_update_count = 0;
+	$update_plugins = get_site_transient( 'update_plugins' );
+	if ( !empty($update_plugins->response) )
+		$plugin_update_count = count( $update_plugins->response );
+	$update_themes = get_site_transient( 'update_themes' );
+	if ( !empty($update_themes->response) )
+		$theme_update_count = count( $update_themes->response );
+	$update_wordpress = get_core_updates( array('dismissed' => false) );
+	if ( !empty($update_wordpress) && !in_array( $update_wordpress[0]->response, array('development', 'latest') ) )
+		$wordpress_update_count = 1;
+
+	$total_update_count = $plugin_update_count + $theme_update_count + $wordpress_update_count;
+	
+	if(!empty( $total_update_count)){
+		$up_count_html = '<span class="update-plugins"><span class="update-count">' . $total_update_count . '</span></span>';
+	}else{
+		$up_count_html = '';
+	}
+	
+	$site_admin_menu = array(__('Network Admin') . $up_count_html, 'manage_network', 'network/', '', 'menu-top menu-top-first menu-icon-site', 'menu-site', 'div');
 	$separator = array( '', 'read', 'separator1', '', 'wp-menu-separator' );
 	
 	array_unshift($menu, $separator);

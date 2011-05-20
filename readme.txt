@@ -32,7 +32,7 @@ Learninglog is tested up to WordPress 3.1.2 (with multisite enabled) and BuddyPr
 1. See http://codex.wordpress.org/Plugins_Add_New_SubPanel
 1. Make your FTP credentials to the server hosting your website available
 1. Log in as super admin to your WordPress website
-1. Navigate to the administration section
+1. Navigate to the super (network) admin administration section
 1. Navigate to 'Plugins' > 'Add New'
 1. Search the Plugin by the 'learninglog' keyword
 1. Click 'Install Now'
@@ -60,7 +60,7 @@ Learninglog is tested up to WordPress 3.1.2 (with multisite enabled) and BuddyPr
 
 == Frequently Asked Questions ==
 = Are there themes included? =
-Yes. There are two BuddyPress compatible themes included. You can activate them through the themes section of the super admin menu.
+Yes. There are two BuddyPress compatible themes included. You can activate them through the themes section of the super (network) admin menu.
 One is called 'Learninglog Home Template' and is intended to be set as the current theme for the super admin.
 The second is called 'Learninglog User Template' and is intended to be set as the current theme for all the other users/blogs.
 
@@ -71,14 +71,14 @@ The 'Admin CSS' component is by default deactivated and can be activated by the 
 If the 'Learninglog Home Template' is set as the current theme (see above), widgets can be placed on the left side of the home screen, as for exampple pages or plain text.
 
 == Screenshots ==
-1. Admin learninglog (as super admin)
+1. Admin learninglog (as super (network) admin)
 1. Create new assignment (as teacher)
 1. Answer to an assignment (as student)
 
 == Changelog ==
 = 2.1.1 =
 * admin menus are now compatible with the WordPress 3.1 network admin screen
-* fixed a lot of bugs (var definations) to prevent php warnings
+* fixed a lot of bugs (var definitions) to prevent php warnings
 * disabled admin menu bar in themes
 * added preview images for themes
 * fixed a bug in pagination of the group's home section

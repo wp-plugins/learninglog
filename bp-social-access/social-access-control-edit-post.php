@@ -144,7 +144,9 @@ Class BP_Post_Access_Control_Edit_Post Extends BP_Post_Access_Control {
 			
 			//sorting according to display_names (asc)
 			array_multisort($display_names, $user_ids, $user_emails);
-
+			
+			$all_user_ids = array();
+			
 			foreach ($user_ids as $key => $user_id){
 				if( !in_array($user_id, $all_user_ids) ){
 					$all_user_ids[] = $user_id;

@@ -121,7 +121,7 @@ class LearningDiarySetup
 		
 		//apply changes immediately
 		if($_POST) {
-			header("Location: admin.php?page=learning-diary-tasks-init.php&updated=true");
+		//	header("Location: admin.php?page=lerntagebuchadmin&updated=true");
 		}
 	}
 

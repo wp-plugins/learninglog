@@ -141,6 +141,7 @@ function learning_diary_tasks_add_admin_menu_tasks() {
 			);
 		}
 	} else {
+		/*
 		$page = add_menu_page ( 
 			__( "Lerntagebuchadmin", 'bp_learning_diary' ), 
 			__( "Lerntagebuchadmin", 'bp_learning_diary' ), 
@@ -149,7 +150,7 @@ function learning_diary_tasks_add_admin_menu_tasks() {
 			//array (&$learningdiaryedit, 'learning_diary_tasks_edit_page' ), 
 			array (&$learningdiarysetup, 'learning_diary_setup_page' ), 
 			"" 
-		);
+		);*/
 	}
 	
 	add_action ( "admin_print_styles", "learning_diary_tasks_add_general_style" );
@@ -224,6 +225,27 @@ function learning_diary_tasks_add_general_style() {
 }
 
 add_action ( 'admin_menu', 'learning_diary_tasks_add_admin_menu_tasks', 10 );
+
+/*
+ * Add network admin menus to network section of super admin
+ */
+
+function learninglog_diary_tasks_add_network_admin_menu() {
+	$learningdiarysetup = new LearningDiarySetup();
+	
+	$page = add_menu_page ( 
+		__( "Lerntagebuchadmin", 'bp_learning_diary' ), 
+		__( "Lerntagebuchadmin", 'bp_learning_diary' ), 
+		2, 
+		//basename ( __FILE__ ), 
+		'lerntagebuchadmin',
+		//array (&$learningdiaryedit, 'learning_diary_tasks_edit_page' ), 
+		array (&$learningdiarysetup, 'learning_diary_setup_page' ), 
+		"" 
+	);	
+}
+
+add_action( 'network_admin_menu', 'learninglog_diary_tasks_add_network_admin_menu', 10);
 
 /*
  * Add menu item for creating and administrating groups

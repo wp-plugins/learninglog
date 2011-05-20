@@ -23,6 +23,7 @@ Class UserMassImport {
 	
 	#actions
 		add_action( 'admin_menu', array( $this,'add_admin_menu' ), 11 );
+		add_action( 'network_admin_menu', array( $this,'add_network_admin_menu' ), 11 );
 	
 		if( isset( $_GET[ "batchimportusers" ] ) ) {
 			add_action( 'plugins_loaded', array( $this, 'remove_bp_core_filter_blog_welcome_email' ) , 200 );
@@ -49,7 +50,7 @@ Class UserMassImport {
 		global $current_user;
 							
 		if ( is_super_admin() ) {
-			add_menu_page(__("Importadministration", 'bp_learning_diary'), __("Importadministration", 'bp_learning_diary'), 2, "import-admin", array($this,'admin_validate') ,'');
+			//add_menu_page(__("Importadministration", 'bp_learning_diary'), __("Importadministration", 'bp_learning_diary'), 2, "import-admin", array($this,'admin_validate') ,'');
 				       
 		} else if( get_usermeta( $current_user->ID,'learning_diary_tasks_teacher' ) ) {
 			
@@ -72,6 +73,17 @@ Class UserMassImport {
 
 		}
 	
+	}
+	
+	/*
+	 * Add network admin menu to network admin section of super admin
+	 */ 
+	
+	public function add_network_admin_menu()
+	{
+		if ( is_super_admin() ) {
+			add_menu_page(__("Importadministration", 'bp_learning_diary'), __("Importadministration", 'bp_learning_diary'), 2, "import-admin", array($this,'admin_validate') ,'');
+		}
 	}
 	
 	/*

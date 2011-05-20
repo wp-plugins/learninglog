@@ -204,33 +204,35 @@ Class BP_Post_Access_Control_Edit_Post Extends BP_Post_Access_Control {
 		<table class='widefat'>
 		
   		<?php 
+		if( count($all_user_ids)>0 ) {
+			//sort users catched above
+			array_multisort($all_display_names, $all_user_ids, $all_user_emails);
 
-		//sort users catched above
-		array_multisort($all_display_names, $all_user_ids, $all_user_emails);
-
-		foreach ($all_user_ids as $key => $user_id) {
-			$per_post_setting = $this->get_user_post_setting($user_id, $post->ID);
-			?>
-			<tr>
-			<td align="center" >
-				<input type="checkbox" name="bpsa-user-post-access-setting-specific-users[<?php echo $user_id ?>]" value="allow"
-					<?php if (in_array($user_id, $users_of_blog_ids)) echo "disabled='true' ";
-					//Check if user has access to the post ($per_post_setting)
-					//Check if current post has any access settings -> if not: nobody will be selected
-					if ($per_post_setting=='allow' && get_post_meta($post->ID, '_bpac_visible_for')) echo " checked";
-					?>
-				/>
-			</td>
+			foreach ($all_user_ids as $key => $user_id) {
+				$per_post_setting = $this->get_user_post_setting($user_id, $post->ID);
+				?>
+				<tr>
+				<td align="center" >
+					<input type="checkbox" name="bpsa-user-post-access-setting-specific-users[<?php echo $user_id ?>]" value="allow"
+						<?php if (in_array($user_id, $users_of_blog_ids)) echo "disabled='true' ";
+						//Check if user has access to the post ($per_post_setting)
+						//Check if current post has any access settings -> if not: nobody will be selected
+						if ($per_post_setting=='allow' && get_post_meta($post->ID, '_bpac_visible_for')) echo " checked";
+						?>
+					/>
+				</td>
 			
-			<td <?php if (in_array($user_id, $users_of_blog_ids)) echo " style='color:gray' "; ?>
-				title="<?php echo $all_display_names[$key]?>&nbsp;&lt;<?php echo $all_user_emails[$key] ?>&gt;" >
-				<?php echo $all_display_names[$key] . "<br /><font style='color:gray'>" . "&lt;" . $all_user_emails[$key] . "&gt;";
-				if (in_array($user_id, $users_of_blog_ids)) echo "<br /><i>" . __('Blog-Besitzer/in', 'bp_learning_diary') . "</i>"; ?>
-				</font>
-			</td>
-			</tr>
-			<?php 
-		} // end foreach ?>
+				<td <?php if (in_array($user_id, $users_of_blog_ids)) echo " style='color:gray' "; ?>
+					title="<?php echo $all_display_names[$key]?>&nbsp;&lt;<?php echo $all_user_emails[$key] ?>&gt;" >
+					<?php echo $all_display_names[$key] . "<br /><font style='color:gray'>" . "&lt;" . $all_user_emails[$key] . "&gt;";
+					if (in_array($user_id, $users_of_blog_ids)) echo "<br /><i>" . __('Blog-Besitzer/in', 'bp_learning_diary') . "</i>"; ?>
+					</font>
+				</td>
+				</tr>
+				<?php 
+			} // end foreach 
+		} // if
+		?>
 		
 		</table>
 		</div>

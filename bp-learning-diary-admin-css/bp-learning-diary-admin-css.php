@@ -249,4 +249,13 @@ function ld_disable_screen_layout_columns($cols, $id, $scr)
 //apply_filters('screen_layout_columns', ...) is located in wp-admin/includes/template.php
 add_filter('screen_layout_columns', 'ld_disable_screen_layout_columns', 10, 3);
 
+function restore_admin_menu()
+{
+	wp_enqueue_script ( 
+		"restore_admin_menu", 
+		(WP_PLUGIN_URL . '/' . LEARNING_DIARY_TASKS_PLUGIN_URL . '/bp-learning-diary-admin-css/admin.js'),
+		array ('jquery' ) 
+	);
+}
 
+add_action('admin_init', 'restore_admin_menu');

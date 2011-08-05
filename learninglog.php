@@ -3,7 +3,7 @@
  * Plugin Name: Learninglog
  * Plugin URI:  http://learninglog.org
  * Description: Learninglog offers teachers and learners advanced functions to use Wordpress as a learning tool.
- * Version:     2.1.1
+ * Version:     2.1.2
  * Requires at least: 3.0
  * Author:      Tom, andrea.cantieni
  * Text Domain: bp_learning_diary

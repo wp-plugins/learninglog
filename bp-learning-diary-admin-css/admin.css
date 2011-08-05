@@ -26,6 +26,11 @@ div#wp-admin-bar > .padder{
 
 }
 
+#wpcontent, #footer {
+margin-left: 10px;
+margin-right: 10px;
+}
+
 #adminmenu {
 	float: left;
 	clear: left;

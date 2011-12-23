@@ -304,12 +304,16 @@ div#side-info-column input.button, a.button {
 
 #screen-meta {
  	z-index:10;
+	width: 960px;
+	margin: auto;
 }
 #admin_header {
 	z-index:9;
 }
 #screen-meta-links {
 	margin-right: 33px;
+	position: absolute;
+	z-index:10;
 }
 div#screen-options-link-wrap, div#contextual-help-link-wrap, .show-settings {
 	-moz-border-radius-bottomleft: 4px 4px;

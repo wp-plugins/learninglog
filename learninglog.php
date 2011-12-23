@@ -30,20 +30,28 @@ if( !is_multisite() ) {
 }
 
 /* Check if buddypress is activated */
-if( !function_exists( 'bp_core_install' ) ) {
+function learninglog_install_buddypress_notice() {
 	echo '<div id="message" class="error fade"><p style="line-height: 150%">';
-	echo '<strong>Learninglog</strong></a> requires the BuddyPress plugin to work. '
-		. 'Please <a href="http://buddypress.org/download">install BuddyPress</a> first, or <a href="plugins.php">deactivate Learninglog</a>.';
+	_e('<strong>Learninglog</strong></a> requires the BuddyPress plugin to work. Please <a href="http://buddypress.org/download">install BuddyPress</a> first, or <a href="plugins.php">deactivate Learninglog</a>.');
 	echo '</p></div>';
-	return;
 }
 
-add_action( 'bp_init', 'learning_diary_tasks_init' );
+if ( !function_exists( 'bp_core_install' ) ) {
+	require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
+	if ( is_plugin_active( 'buddypress/bp-loader.php' ) ) {
+		require_once ( WP_PLUGIN_DIR . '/buddypress/bp-loader.php' );
+	} else {
+		add_action( 'admin_notices', 'learninglog_install_buddypress_notice' );
+		return;
+	}
+}
 
 function learning_diary_tasks_init() {
 	load_plugin_textdomain('bp_learning_diary', false, LEARNING_DIARY_TASKS_PLUGIN_URL . '/languages');
     require( dirname( __FILE__ ) . '/bp-learning-diary/learning-diary-tasks-init.php' );
 }
+
+add_action( 'bp_init', 'learning_diary_tasks_init' );
 
 /* Register learninglog themes contained within the bp-themes folder */
 if ( function_exists( 'register_theme_directory') ) {

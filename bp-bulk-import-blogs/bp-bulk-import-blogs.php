@@ -11,7 +11,9 @@
 if(is_multisite()){
 	# Check if buddypress is activated
 	//add_action( 'bp_init', 'bulk_import_blogs_init' );
-	add_action( 'init', 'bulk_import_blogs_init' );
+	//add_action( 'init', 'bulk_import_blogs_init' );
+	add_action( 'wp_loaded', 'bulk_import_blogs_init' );
+	
 }
 
 function bulk_import_blogs_init() {

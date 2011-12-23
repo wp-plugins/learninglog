@@ -5,8 +5,8 @@
  */
 
 #INITIATE Simplicity
-add_action('init', 'simplicity_init');
-//add_action('wp_loaded', 'simplicity_init');
+//add_action('init', 'simplicity_init');
+add_action('wp_loaded', 'simplicity_init');
 
 #ACTIVATE Options Page
 add_action('admin_menu', 'simplicity_admin_menu');
@@ -36,8 +36,7 @@ function simplicity_init(){
 	// and we can't display it in our options
 	global $simplicity_menu, $simplicity_submenu, $menu, $submenu;
 	$simplicity_menu = $menu;
-	$simplicity_submenu = $submenu;	
-	
+	$simplicity_submenu = $submenu;
 	#Check if form was submitted
 	if (isset($_POST['simplicity_state_submit'])){
 		simplicity_save_options();
@@ -183,7 +182,6 @@ function simplicity_options_page(){
 
 function simplicity_save_options() {
 	$simplicity_state = $_POST['simplicity_state'] == 'on' ? '1' : '2';
-
 	simplicity_update_option('simplicity_state',$simplicity_state);
 }
 

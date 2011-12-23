@@ -154,8 +154,9 @@ function learninglog_diary_network_admin_menu()
 	$super_admin_menu = array(__('Site Admin'), 'manage_network', '../ ', '', 'menu-top menu-top-first menu-icon-site', 'menu-site', 'div');
 	$separator = array( '', 'read', 'separator1', '', 'wp-menu-separator' );
 	
-	array_unshift($menu, $separator);
-	array_unshift($menu, $super_admin_menu);
+	//array_unshift($menu, $separator);
+	//array_unshift($menu, $super_admin_menu);
+	add_menu_page( __('Site Admin') , __('Site Admin'), 'manage_network', '/../ ', null, null, 0 ); //space after /../ is needed to go one up
 
 }
 
@@ -190,8 +191,9 @@ function learninglog_diary_site_admin_menu()
 	$site_admin_menu = array(__('Network Admin') . $up_count_html, 'manage_network', 'network/', '', 'menu-top menu-top-first menu-icon-site', 'menu-site', 'div');
 	$separator = array( '', 'read', 'separator1', '', 'wp-menu-separator' );
 	
-	array_unshift($menu, $separator);
-	array_unshift($menu, $site_admin_menu);
+	//array_unshift($menu, $separator);
+	//array_unshift($menu, $site_admin_menu);
+	add_menu_page( __('Network Admin') , __('Network Admin') . $up_count_html, 'manage_network', 'network/', null, null, 0 );
 
 }
 

@@ -2,8 +2,8 @@
 Contributors: Tom, andrea.cantieni
 Tags: wpmu, buddypress, school, learning, teaching, learninglog
 Requires at least: 3.0
-Tested up to: 3.2.1
-Stable tag: 2.1.2
+Tested up to: 3.3
+Stable tag: 2.1.3
 
 Learninglog offers teachers and learners advanced functions to use WordPress as a learning tool.
 
@@ -22,7 +22,7 @@ Learninglog is a project of the [Institute for Media and Schools](http://www.sch
 == Installation ==
 Learninglog requires WordPress 3.0 or higher (with **multisite enabled**) and BuddyPress 1.2.4.1 or higher installed.
 
-Learninglog is tested up to WordPress 3.2.1 (with multisite enabled) and BuddyPress 1.2.9 installed.
+Learninglog is tested up to WordPress 3.3 (with multisite enabled) and BuddyPress 1.5.2 installed.
 
 = Make sure you have WordPress 3.0 or higher (with multisite enabled) and BuddyPress 1.2.4.1 or higher properly installed on your server. From this point on, there are at least three different installation scenarios: =
 
@@ -76,6 +76,13 @@ If the 'Learninglog Home Template' is set as the current theme (see above), widg
 1. Answer to an assignment (as student)
 
 == Changelog ==
+= 2.1.3 =
+* admin menus are now compatible with WordPress 3.3
+* themes are now compatible with BuddyPress 1.5
+* installation procedure is now compatible with BuddyPress 1.5
+* fixed a bug not showing all users for specific user visibility
+* fixed some more bugs mainly concerning compatibility with WordPress 3.3 and BuddyPress 1.5 (for details see development log in trac)
+
 = 2.1.2 =
 * admin menus are now compatible with WordPress 3.2
 

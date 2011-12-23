@@ -111,13 +111,24 @@ class LearningDiaryTasksGroupActivity
 	{
 		global $bp_deactivated;
 		global $user_ID;
-		
-		//simulate bp-activitiy deactivation to prevent bp-activitiy messages if this component is activated
-		$bp_deactivated['bp-activity.php'] = 1;
-		//$bp_components = get_site_option('bp-deactivated-components');
+		global $bp;
 
 		//check if we are (not) on the home screen (labeled 'Start') of the group
 		if( !bp_group_is_visible() || !bp_is_group_home() ) return;
+
+		//simulate bp-activitiy deactivation to prevent bp-activitiy messages if this component is activated
+		$bp_deactivated['bp-activity.php'] = 1; //before bp 1.5
+		unset($bp->active_components);
+		
+		//hack to hide memberlist that appears if any bp components are active
+		echo "<script type='text/javascript'>
+			jQuery(document).ready(function() {
+			    jQuery('#pag-top').hide();
+				jQuery('#pag-bottom').hide();
+				jQuery('#member-list').hide();
+				jQuery('#subnav').hide();
+			});
+			</script>";
 
 		$activity = $this->get_group_activity();
 
@@ -126,7 +137,7 @@ class LearningDiaryTasksGroupActivity
 		$all_posts_ids = $activity['posts_ids'];
 	
 		?>
-		<div class="item-list-tabs no-ajax" id="subnav">
+		<div class="item-list-tabs no-ajax" id="subnav_">
 		<ul>
 <!-- rss-feed 	
 			<li class="feed">
@@ -214,7 +225,7 @@ class LearningDiaryTasksGroupActivity
 								</a>
 							</h2>
 						
-							<p class="date"><?php the_time() ?> 
+							<p class="date"><?php the_date() ?> 
 								<em><?php _e( 'in', 'buddypress' ) ?> 
 									<?php //the_category(', ') ?>
 									<?php echo str_replace( 'blog/', '', get_the_category_list(', ') )?>

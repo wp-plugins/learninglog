@@ -62,7 +62,12 @@ Class BP_Post_Access_Control_Edit_Post Extends BP_Post_Access_Control {
 		
 		$mapto_group_meta = "";
 		
-		$users_of_blog = get_users_of_blog();
+		$all_user_ids = array();
+		$all_display_names = array();
+		$all_user_emails = array();
+		
+		//$users_of_blog = get_users_of_blog(); //deprecated since wp 3.1
+		$users_of_blog = get_users();
 		foreach($users_of_blog as $the_blog_user){
 			$users_of_blog_ids[]=$the_blog_user->user_id;
 		}
@@ -75,7 +80,6 @@ Class BP_Post_Access_Control_Edit_Post Extends BP_Post_Access_Control {
 		<?php 
 		$groups = groups_get_user_groups($current_user->ID,0,100);
 		
-		
 		if($groups){
 			$user_access_meta = get_post_meta($post->ID, '_bpac_visible_for',true);
 			$group_access_meta = get_post_meta($post->ID, '_bpac_users_of_group_have_access');
@@ -83,17 +87,22 @@ Class BP_Post_Access_Control_Edit_Post Extends BP_Post_Access_Control {
 			?>
 			<label for="bpsa-visible-for"><?php _e("Sichtbar f&uuml;r:","bp_learning_diary")?></label>
 			<select name='bpsa-visible-for' id='bpsa-visible-for'>
-				<option value='all' <?php if ($user_access_meta=='all'){ echo " selected='selected'"; }?>><?php _e('vollständig öffentlich', 'bp_learning_diary') ?></option>
-				<?php 
-				if(get_blog_option(1,'BP_Post_Access_Control_loggedin_users_option_for_visibility')){ 
+				<option value='all' <?php if ($user_access_meta=='all'){ echo " selected='selected'"; }?>>
+					<?php _e('vollständig öffentlich', 'bp_learning_diary') ?>
+				</option>
+				<?php if(get_blog_option(1,'BP_Post_Access_Control_loggedin_users_option_for_visibility')){ 
 				//Show option to choose loggedin users only if super admin has activated the option (only superadmin can edit this option)
-				?>
-					<option value='loggedin_users' <?php if ($user_access_meta=='loggedin_users') { echo " selected='selected'"; } ?> > <?php _e('alle angemeldeten Nutzende','bp_learning_diary') ?></option>
-				<?php 
-				} 
-				?>
-				<option value='specific_groups' <?php if ($user_access_meta=='specific_groups') { echo " selected='selected'"; } ?> > <?php _e('spezifische Gruppen','bp_learning_diary') ?></option>
-				<option value='specific_users' <?php if ($user_access_meta=='specific_users'){ echo " selected='selected'"; } ?> > <?php _e('spezifische Nutzende','bp_learning_diary') ?></option>
+					?>
+					<option value='loggedin_users' <?php if ($user_access_meta=='loggedin_users') { echo " selected='selected'"; } ?> > 
+						<?php _e('alle angemeldeten Nutzende','bp_learning_diary') ?>
+					</option>
+				<?php } ?>
+				<option value='specific_groups' <?php if ($user_access_meta=='specific_groups') { echo " selected='selected'"; } ?> > 
+					<?php _e('spezifische Gruppen','bp_learning_diary') ?>
+				</option>
+				<option value='specific_users' <?php if ($user_access_meta=='specific_users'){ echo " selected='selected'"; } ?> > 
+					<?php _e('spezifische Nutzende','bp_learning_diary') ?>
+				</option>
 			</select>		
 		<?php } ?>
 		
@@ -106,7 +115,7 @@ Class BP_Post_Access_Control_Edit_Post Extends BP_Post_Access_Control {
 		<table  cellspacing="0" class="widefat">
 		<?php 
 		
-		foreach ($groups['groups'] as $the_group){
+		foreach ($groups["groups"] as $the_group){
 			$i++;
 			$group = new BP_Groups_Group( $the_group );
 			$group_name = $group->name;
@@ -144,11 +153,7 @@ Class BP_Post_Access_Control_Edit_Post Extends BP_Post_Access_Control {
 			
 			//sorting according to display_names (asc)
 			array_multisort($display_names, $user_ids, $user_emails);
-			
-			$all_user_ids = array();
-			$all_display_names = array();
-			$all_user_emails = array();
-			
+			//catch members of each group to display for specific users
 			foreach ($user_ids as $key => $user_id){
 				if( !in_array($user_id, $all_user_ids) ){
 					$all_user_ids[] = $user_id;
@@ -204,6 +209,7 @@ Class BP_Post_Access_Control_Edit_Post Extends BP_Post_Access_Control {
 		<table class='widefat'>
 		
   		<?php 
+
 		if( count($all_user_ids)>0 ) {
 			//sort users catched above
 			array_multisort($all_display_names, $all_user_ids, $all_user_emails);

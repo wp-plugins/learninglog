@@ -122,7 +122,7 @@ function learning_diary_admin_menu_header(){
 				<?php bp_loggedin_user_avatar( 'type=thumb&width=40&height=40' ) ?>
 			</a>
 	
-			<h4><?php bp_loggedinuser_link() ?></h4>
+			<h4><a href="<?php bp_loggedin_user_link()?>"><?php bp_loggedin_user_fullname() ?></a></h4>
 			<a class="button logout" href="<?php echo wp_logout_url( bp_get_root_domain() ) ?>"><?php _e( 'Log Out', 'buddypress' ) ?></a>
 	
 		</div>

@@ -14,14 +14,15 @@ if(is_user_logged_in())
 
 
 //disable current header functions
-define( 'BP_DTHEME_DISABLE_CUSTOM_HEADER', true );
+//define( 'BP_DTHEME_DISABLE_CUSTOM_HEADER', true );
 
 
 /*
  * lerntagebuch user theme header function
  */
+/*
 function lerntagebuch_user_add_custom_header_support() {
-	/* Set the defaults for the custom header image (http://ryan.boren.me/2007/01/07/custom-image-header-api/) */
+	// Set the defaults for the custom header image (http://ryan.boren.me/2007/01/07/custom-image-header-api/) 
 	define( 'HEADER_TEXTCOLOR', 'FFFFFF' );
 	define( 'HEADER_IMAGE', get_bloginfo('stylesheet_directory').'/images/default-header.png' ); // %s is theme dir uri
 	define( 'HEADER_IMAGE_WIDTH', 960 );
@@ -90,9 +91,12 @@ function lerntagebuch_user_add_custom_header_support() {
 	<?php
 	}
 	add_custom_image_header( 'bp_dtheme_header_style', 'bp_dtheme_admin_header_style' );
+
 }
 
-add_action( 'init', 'lerntagebuch_user_add_custom_header_support' );
+//add_action( 'init', 'lerntagebuch_user_add_custom_header_support' );
+add_action( 'setup_theme', 'lerntagebuch_user_add_custom_header_support' );
+*/
 
 //Disable Admin Bar in WordPress 3.2
 add_filter( 'show_admin_bar', '__return_false' );

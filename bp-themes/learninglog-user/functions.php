@@ -94,7 +94,39 @@ function lerntagebuch_user_add_custom_header_support() {
 
 add_action( 'init', 'lerntagebuch_user_add_custom_header_support' );
 
-//Disable Admin Bar in WordPress/Buddypress
+//Disable Admin Bar in WordPress 3.2
 add_filter( 'show_admin_bar', '__return_false' );
+//Disable Admin Bar in Buddypress
 define('BP_DISABLE_ADMIN_BAR', true);
+
+//Disable Admin Bar in WordPress 3.3
+//snipped from http://wp.tutsplus.com/tutorials/how-to-disable-the-admin-bar-in-wordpress-3-3/
+if (!function_exists('disableAdminBar')) {  
+
+	function disableAdminBar(){
+
+		remove_action( 'admin_footer', 'wp_admin_bar_render', 1000 ); // for the admin page
+		remove_action( 'wp_footer', 'wp_admin_bar_render', 1000 ); // for the front end
+
+		function remove_admin_bar_style_backend() {  // css override for the admin page  
+			echo '<style>body.admin-bar #wpcontent, body.admin-bar #adminmenu { padding-top: 0px !important; }</style>';
+		}
+
+		add_filter('admin_head','remove_admin_bar_style_backend');
+
+		function remove_admin_bar_style_frontend() { // css override for the frontend
+			echo '<style type="text/css" media="screen">
+				html { margin-top: 0px !important; }
+				* html body { margin-top: 0px !important; }
+			</style>';
+		}
+
+		add_filter('wp_head','remove_admin_bar_style_frontend', 99);
+
+	}
+
+}
+
+add_action('init','disableAdminBar'); // New version
+
 ?>

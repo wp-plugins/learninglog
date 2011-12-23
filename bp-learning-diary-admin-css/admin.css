@@ -150,6 +150,10 @@ ul#nav {
 	text-decoration: none;
 }
 
+#menu-dashboard{
+	padding-top: 8px !important;
+}
+
 /* > Navigation
 -------------------------------------------------------------- */
 .wp-menu-separator {

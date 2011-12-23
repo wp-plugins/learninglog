@@ -92,7 +92,7 @@ function simplicity_disable_menus() {
             "tools.php",
             "export.php"
         );
- 
+ 		
 	}else{
 		$disabled_menu_items = array();
 		$disabled_submenu_items = array("index.php", "my-sites.php", "nav-menus.php");//, "themes.php"); //disable useless dashboard submenus forever

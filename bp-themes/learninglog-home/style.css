@@ -11,7 +11,7 @@ Tags: buddypress, two-column, grey, dark
 
 /* Inherit the default theme styles */
 @import url( ../../../buddypress/bp-themes/bp-default/_inc/css/default.css );
-@import url( ../../../buddypress/bp-themes/bp-default/_inc/css/adminbar.css );
+/*@import url( ../../../buddypress/bp-themes/bp-default/_inc/css/adminbar.css );*/
 @import url(../learninglog-user/style.css);
 
 div#header {
